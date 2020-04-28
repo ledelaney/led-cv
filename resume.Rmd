@@ -1,0 +1,31 @@
+---
+output:
+  pdf_document:
+    latex_engine: xelatex
+    template: template.tex
+date: June 11, 2018
+first: "Lucy E "
+last: "Delaney"
+email: "ldelan5@uic.edu"
+address: "Chicago, IL 60607"
+website: "ledelaney.github.io"
+orcid: 
+languages: "$\LLaTeX$, HTML, Markdown, and Rmarkdown"
+programming: "R"
+github: "ledelaney"
+twitter: 
+attributes: 
+interests: "Angiosperm evolution, macroevolution, plant breeding systems, evolution outreach, biology education research"
+edu:
+  - {degree: PhD, where: University of Illinois at Chicago, description_1: "in Ecology and Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant Patterns and How We Understand Them_"}
+  - {degree: MA, where: Hunter College of the City University of New York, description_1: "in Molecular and Cellular Biology"}
+  - {degree: BS, where: John Jay College of the City University of New York, description_1: "in Forensic Molecular Biology, Philosophy"}
+  
+class:
+  - {year: 2016-2017, what: "BIOS120: Biology of Populations and Communities", description: "Introductory biology laboratory course"}
+  - {year: 2017-2018, what: "BIOS430: Evolution", description: "Upper-division"}
+  - {year: "Summer 2018", what: "BIOS220: Molecular and Mendelian Genetics", description: "Upper-division"}
+  
+work:
+  - {year: "2018-Present", where: "Nurturing Wisdom Tutoring", what: "Introductory biology laboratory course"}
+---
