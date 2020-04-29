@@ -315,13 +315,13 @@ $if(orcid)$
 \section{orcid}
 \href{http://orcid.org/$orcid$}{$orcid$}
 $endif$
-$if(languages)$
-\section{markup languages}
-$languages$
-$endif$
 $if(programming)$
 \section{programming}
 $programming$ 
+$endif$
+$if(languages)$
+\section{markup languages}
+$languages$
 $endif$
 $if(attributes)$
 \section{defining attributes}
@@ -340,43 +340,41 @@ $interests$
 $for(edu)$
     \textbf{$edu.degree$} $edu.description_1$ \fn{$edu.where$}
     $if(edu.description_2)$ 
-    \vspace{-0.25cm}
+    \vspace{-0.40cm}
      $edu.description_2$
      $endif$ 
-\vspace{-0.15cm}
 $endfor$
 
-
-\vspace{-0.10cm}
-\section{Teaching Experience}
+\vspace{-0.35cm}
+\section{Teaching}
 \vspace{-0.45cm}
-\setlength{\tabcolsep}{0pt}
 $for(class)$
- \begin{tabular}{p{3.25cm} p{10.25cm}}
-$class.year$ & \makecell[r]{\textbf{$class.what$}\\ $class.description$}
-\end{tabular}\\
+  \textbf{$class.what$} \fn{$class.year$}\\
+  $if(class.description)$
+  \vspace{0.25cm}
+  $class.description$\\
+  $endif$
 $endfor$
-\vspace{-0.25cm}
 
-\vspace{-0.10cm}
+\vspace{-0.75cm}
 \section{Professional Experience}
 \vspace{-0.45cm}
-\setlength{\tabcolsep}{0pt}
 $for(work)$
- \begin{tabular}{p{3.25cm} p{10.25cm}}
-$work.year$ & \makecell[r]{\textbf{$work.where$}\\ $work.what$}
-\end{tabular}\\
+  \textbf{$work.where$} \fn{$work.year$}\\
+  $if(work.what)$
+  \vspace{0.25cm}
+  $work.what$\\
+  $endif$
 $endfor$
-\vspace{-0.25cm}
 
-\vspace{-0.10cm}
+\vspace{-0.75cm}
 \section{Extracurricular}
-\vspace{-0.25cm}
-\TabPositions{1.5cm}
+\vspace{-0.65cm}
+\TabPositions{2cm}
 $for(extra)$
     $extra.year$ \tab{$extra.name$} \\
 $endfor$
-
+\newgeometry{left=2cm,top=2cm,right=2cm,bottom=2cm}
 
 $body$
 

@@ -3,15 +3,15 @@ output:
   pdf_document:
     latex_engine: xelatex
     template: template.tex
-date: June 11, 2018
+date: April 28, 2020
 first: "Lucy E "
 last: "Delaney"
 email: "ldelan5@uic.edu"
 address: "Chicago, IL 60607"
 website: "ledelaney.github.io"
 orcid: 
-languages: "$\LLaTeX$, HTML, Markdown, and Rmarkdown"
 programming: "R"
+languages: "$\LLaTeX$, HTML, Markdown, & Rmarkdown"
 github: "ledelaney"
 twitter: 
 attributes: 
@@ -22,10 +22,24 @@ edu:
   - {degree: BS, where: John Jay College of the City University of New York, description_1: "in Forensic Molecular Biology, Philosophy"}
   
 class:
+  - {year: 2019-2020, what: "BIOS220: Molecular and Mendelian Genetics", description: "Responsible for online transition"}
+  - {year: "Spring 2019", what: "BIOS230: Ecology and Evolution", description: "Sophomore-level ecology"}
+  - {year: 2017-2018, what: "BIOS430: Evolution", description: "Upper-division, programming-focused Evolution course."}
   - {year: 2016-2017, what: "BIOS120: Biology of Populations and Communities", description: "Introductory biology laboratory course"}
-  - {year: 2017-2018, what: "BIOS430: Evolution", description: "Upper-division"}
-  - {year: "Summer 2018", what: "BIOS220: Molecular and Mendelian Genetics", description: "Upper-division"}
-  
+
 work:
-  - {year: "2018-Present", where: "Nurturing Wisdom Tutoring", what: "Introductory biology laboratory course"}
+  - {year: "2018-Present", where: "Nurturing Wisdom Tutoring", what: "Mathematics and test-prep tutor."}
+  - {year: 2012-2015, where: "NYC Office of Chief Medical Examiner", what: "Forensic Molecular Biologist"}
+  - {year: 2011-2012, where: "NYC Deptartment of Health and Mental Hygiene", what: "Health Research Training Intern"}
+  - {year: 2008-2011, where: "Working Families Party", what: "Field Manager and Administrative Assistant"}
+  
+extra:
+  - {year: 2017, name: "Accepted to MicroMORPH summer course at Harvard University"}
+  - {year: "2016-Present", name: "Reviewer for International Journal of Botany, Oxford Bibliographies"}
+  - {year: 2017, name: "Volunteer at Garfield Park Conservatory"}
+  - {year: 2018, name: "Recipient of the Graduate Teaching Award"}
 ---
+
+# Publications
+
+
