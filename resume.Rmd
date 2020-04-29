@@ -7,22 +7,23 @@ date: April 28, 2020
 first: "Lucy E "
 last: "Delaney"
 email: "ldelan5@uic.edu"
-address: "Chicago, IL 60607"
+address: "Chicago, IL 60622"
 website: "ledelaney.github.io"
+googlescholar: 
 orcid: 
 programming: "R"
-languages: "$\LLaTeX$, HTML, Markdown, & Rmarkdown"
+languages: "$\LLaTeX$, HTML, Markdown, & R markdown"
 github: "ledelaney"
 twitter: 
 licenses: "Illinois Substitute Teaching License & FCC Technician Class Radio License"
 interests: "Evolution outreach & education, macroevolution, the evolution of plant breeding systems, the nature of adaptation, `R` for data manipulation & visualization, `R` for undergraduate education"
 edu:
-  - {degree: PhD student, where: University of Illinois at Chicago, description_1: "in Ecology & Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant Patterns and How We Understand Them_"}
+  - {degree: PhD student, where: University of Illinois at Chicago, description_1: "in Ecology & Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant patterns and how we understand them_"}
   - {degree: MA, where: CUNY Hunter College, description_1: "in Molecular & Cellular Biology, 2016"}
   - {degree: BS, where: CUNY John Jay College, description_1: "in Forensic Molecular Biology & Philosophy, 2012"}
   
 class:
-  - {year: "2019-Present", what: "BIOS 220", description_1: "Molecular and Mendelian Genetics", description_2: "Sophomore-level course focusing on Mendelian inheritance patterns and molecular mechanisms of inheritance. Managed transition from in-person to online format. Responsible for teaching discussion section, creating digital course materials and exams, grading, and Blackboard administration."}
+  - {year: "2019-Present", what: "BIOS 220", description_1: "Molecular and Mendelian Genetics", description_2: "Sophomore-level course focusing on Mendelian inheritance patterns and molecular mechanisms of inheritance. Helped managed transition from in-person to online format. Responsible for teaching discussion section, creating digital course materials and exams, grading, and Blackboard administration."}
   - {year: "Spring 2019", what: "BIOS 230", description_1: "Ecology and Evolution", description_2: "Sophomore-level course with emphasis on basic ecological systems, ecosystem dynamics, and evolutionary principles. Responsible for weekly office hours, assignment creation, and grading."}
   - {year: 2017-2018, what: "BIOS 430", description_1: "Evolution", description_2: "Upper-division, programming-focused course on evolutionary theory and principles. Responsible for weekly office hours and debugging, quiz materials, and grading of `R` programming assignments."}
   - {year: 2016-2017, what: "BIOS 120", description_1: "Biology of Populations and Communities", description_2: "Introductory biology laboratory course with emphasis on ecological and evolutionary principles. Responsible for weekly laboratory instruction, office hours, and grading."}
@@ -33,15 +34,9 @@ work:
   - {year: 2011-2012, where: "at NYC Deptartment of Health", what: "Health Research Intern", description: "Accepted to the Health Research Training Program for a year-long internship with the Bureau of Environmental Disease Prevention. Received training in disease epidemiology, emergency preparedness and response, public health and outreach programs in environmental disease control and prevention, and emerging viral infections."}
   - {year: 2008-2011, where: "at Working Families Party", what: "Field Manager & Administrative Assistant", description: "Performed administrative tasks including payroll, managing employees' healthcare coverage, bank deposits, and data entry. Organized informational events for the public, and served as Field Manager for multiple election and fundraising campaigns."}
   
-extra:
-  - {year: 2018, name: "Recipient of the Graduate Teaching Award"}
-  - {year: 2017, name: "Accepted to MicroMORPH summer course at Harvard University"}
-  - {year: 2017, name: "Volunteer at Garfield Park Conservatory"}
-  
 bibliography: mypapers.bib
 csl: apa.csl
 nocite: '@*'
-
 ---
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
@@ -51,7 +46,7 @@ setwd("/Users/lucydelaney/rmd-cv/")
 ```
 
 # Extracurricular
-\vspace{-0.35cm}
+\vspace{-0.45cm}
 
 + 2019-Present \hspace{9.1mm} Created a website for student materials and tutorials  \href{https://ledelaney.github.io/bios220/}{in BIOS 220: Genetics}
 + 2017-Present \hspace{9.1mm} Reviewer for International Journal of Botany, Oxford Bibliographies
@@ -61,7 +56,7 @@ setwd("/Users/lucydelaney/rmd-cv/")
 + 2016 \hspace{22mm} Volunteer at Garfield Park Conservatory
 
 # Presentations
-\vspace{-0.15cm}
+\vspace{-0.45cm}
 
 ```{r, eval = T, echo = FALSE, message = FALSE, warning = FALSE}
 presentations <- read_csv(file = "presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
@@ -74,10 +69,12 @@ not.invited <- presentations %>%
   filter(invited == 0) %>%
   arrange(-when)
 glue::glue_data(not.invited, "**>where<** >what< \\fn{>when<}",
-                "\\begin{quote}>gsub('\\\\*', '', who)<, \\href{>link<}{\">title<.\"}\\end{quote}",
+                "\\begin{quote}>gsub('\\\\*', '', who)<, \\href{>link<}{>title<.}\\end{quote}",
                 .open = ">", .close = "<")
+
+#{\">title<.\"}
 ```
 
 # Publications
-\vspace{-0.15cm}
+\vspace{-0.45cm}
 

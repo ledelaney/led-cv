@@ -303,20 +303,20 @@ pdfborderstyle={/S/U}]{hyperref}
 \begin{document}
 \rfoot{Updated on $date$}
 \pagenumbering{gobble}
-\header{$first$}{$last$}{\href{mailto:}{$email$}} 
+\header{$first$}{$last$}{graduate student in biological sciences} 
 
 \begin{aside}
 \section{contact}
-$if(address)$
-$address$
+$if(email)$
+\href{mailto:}{$email$}
 $endif$
 $if(website)$
 \section{website}
 \href{$website$}{$website$}
 $endif$
-$if(twitter)$
-\section{twitter}
-\href{http://twitter.com/$twitter$}{$twitter$}
+$if(googlescholar)$
+\section{google scholar}
+\href{https://scholar.google.com/citations?user=CiauBHcAAAAJ&hl=en}{$googlescholar$}
 $endif$
 $if(github)$
 \section{github}
