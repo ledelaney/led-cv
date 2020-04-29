@@ -17,15 +17,15 @@ twitter:
 licenses: "Illinois Substitute Teaching License, FCC Technician Class Radio License"
 interests: "Evolution outreach & education, macroevolution, the evolution of plant breeding systems, the nature of adaptation, `R` for data manipulation & visualization, `R` in undergraduate education"
 edu:
-  - {degree: PhD, where: University of Illinois at Chicago, description_1: "in Ecology and Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant Patterns and How We Understand Them_"}
+  - {degree: PhD student, where: University of Illinois at Chicago, description_1: "in Ecology and Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant Patterns and How We Understand Them_"}
   - {degree: MA, where: Hunter College of the City University of New York, description_1: "in Molecular and Cellular Biology"}
   - {degree: BS, where: John Jay College of the City University of New York, description_1: "in Forensic Molecular Biology, Philosophy"}
   
 class:
-  - {year: "2019-Present", what: "BIOS220: Molecular and Mendelian Genetics", description: "Responsible for online transition"}
-  - {year: "Spring 2019", what: "BIOS230: Ecology and Evolution", description: "Sophomore-level ecology"}
-  - {year: 2017-2018, what: "BIOS430: Evolution", description: "Upper-division, programming-focused Evolution course."}
-  - {year: 2016-2017, what: "BIOS120: Biology of Populations and Communities", description: "Introductory biology laboratory course"}
+  - {year: "2019-Present", what: "BIOS220", description_1: "Molecular and Mendelian Genetics", description_2: "Sophomore-level genetics course focusing on Mendelian inheritance patterns and molecular mechanisms of inheritance. Responsible for online transition, digital course materials, Blackboard, etc."}
+  - {year: "Spring 2019", what: "BIOS230", description_1: "Ecology and Evolution", description_2: "Sophomore-level course with emphasis on basic ecological systems and ecosystem dynamics, and evolutionary principles. Responsible for weekly office hours and assignment construction and grading."}
+  - {year: 2017-2018, what: "BIOS430", description_1: "Evolution", description_2: "Upper-division, programming-focused Evolution course."}
+  - {year: 2016-2017, what: "BIOS120", description_1: "Biology of Populations and Communities", description_2: "Introductory biology laboratory course with emphasis on ecological and evolutionary principles."}
 
 work:
   - {year: "2018-Present", where: "at Nurturing Wisdom Tutoring", what: "Tutor", description: "Highly-rated individual tutoring for grades 7-12 in science, mathematics, reading, language, and writing. Provide tutoring of content and test-preparation strategies for High School Entrance Exams and SATs."}
@@ -37,40 +37,39 @@ extra:
   - {year: 2018, name: "Recipient of the Graduate Teaching Award"}
   - {year: 2017, name: "Accepted to MicroMORPH summer course at Harvard University"}
   - {year: 2017, name: "Volunteer at Garfield Park Conservatory"}
+  
+bibliography: mypapers.bib
+csl: apa.csl
+nocite: '@*'
+
 ---
 
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
-library("googlesheets")
-library("dplyr")
+library("tidyverse")
 setwd("/Users/lucydelaney/rmd-cv/")
 
 ```
 
-# Publications
-\vspace{-0.05cm}
-
+# Extracurricular
 
 # Presentations
-
 \vspace{-0.05cm}
 
-```{r, eval = FALSE, echo = FALSE, message = FALSE, warning = FALSE}
-presentations <- read_csv() %>%
+```{r, eval = T, echo = FALSE, message = FALSE, warning = FALSE}
+presentations <- read_csv(file = "presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
   arrange(invited, desc(when))
-save(presentations, file = "presentations.rda")
+
 ```
 
-```{r, eval = F, results = "asis", message = FALSE, warning = FALSE, echo = FALSE}
-load("presentations.rda")
-invited <- presentations %>%
-  filter(invited == 1) %>%
+```{r, eval = T, results = "asis", message = FALSE, warning = FALSE, echo = FALSE}
+not.invited <- presentations %>%
+  filter(invited == 0) %>%
   arrange(-when)
-glue::glue_data(invited, "**>where<** \\fn{>what<}",
+glue::glue_data(not.invited, "**>where<** >what< \\fn{>when<}",
                 "\\begin{quote}>gsub('\\\\*', '', who)<, \\href{>link<}{\">title<.\"}\\end{quote}",
                 .open = ">", .close = "<")
 ```
 
-
-# Extracurricular 
-
+# Publications
+\vspace{-0.05cm}
 

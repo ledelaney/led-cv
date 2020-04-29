@@ -64,6 +64,14 @@ $for(polyglossia-otherlangs)$
 $endfor$
 \fi
 $endif$
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+{$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+\everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+{\par}
+$endif$
 $if(natbib)$
 \usepackage{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
@@ -343,20 +351,22 @@ $for(edu)$
     \vspace{-0.40cm}
      $edu.description_2$
      $endif$ 
+  \vspace{-0.15cm}
 $endfor$
 
-\vspace{-0.35cm}
+\vspace{-0.18cm}
 \section{Teaching}
 \vspace{-0.55cm}
 $for(class)$
-  \textbf{$class.what$} \fn{$class.year$}\\
-  $if(class.description)$
-  \vspace{0.25cm}
-  \small{$class.description$}\\
-  $endif$
+    \textbf{$class.what$} $class.description_1$ \fn{$class.year$}
+    $if(class.description_2)$ 
+    \vspace{-0.40cm}
+      $class.description_2$
+     $endif$ 
+    \vspace{-0.15cm}
 $endfor$
 
-\vspace{-0.75cm}
+\vspace{-0.18cm}
 \section{Professional Experience}
 \vspace{-0.55cm}
 $for(work)$
@@ -364,7 +374,8 @@ $for(work)$
     $if(work.description)$ 
     \vspace{-0.40cm}
      $work.description$
-     $endif$ 
+     $endif$
+    \vspace{-0.15cm}
 $endfor$
 
 \newgeometry{left=2cm,top=2cm,right=2cm,bottom=2cm}
