@@ -14,32 +14,63 @@ programming: "R"
 languages: "$\LLaTeX$, HTML, Markdown, & Rmarkdown"
 github: "ledelaney"
 twitter: 
-attributes: 
-interests: "Angiosperm evolution, macroevolution, plant breeding systems, evolution outreach, biology education research"
+licenses: "Illinois Substitute Teaching License, FCC Technician Class Radio License"
+interests: "Evolution outreach & education, macroevolution, the evolution of plant breeding systems, the nature of adaptation, `R` for data manipulation & visualization, `R` in undergraduate education"
 edu:
   - {degree: PhD, where: University of Illinois at Chicago, description_1: "in Ecology and Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant Patterns and How We Understand Them_"}
   - {degree: MA, where: Hunter College of the City University of New York, description_1: "in Molecular and Cellular Biology"}
   - {degree: BS, where: John Jay College of the City University of New York, description_1: "in Forensic Molecular Biology, Philosophy"}
   
 class:
-  - {year: 2019-2020, what: "BIOS220: Molecular and Mendelian Genetics", description: "Responsible for online transition"}
+  - {year: "2019-Present", what: "BIOS220: Molecular and Mendelian Genetics", description: "Responsible for online transition"}
   - {year: "Spring 2019", what: "BIOS230: Ecology and Evolution", description: "Sophomore-level ecology"}
   - {year: 2017-2018, what: "BIOS430: Evolution", description: "Upper-division, programming-focused Evolution course."}
   - {year: 2016-2017, what: "BIOS120: Biology of Populations and Communities", description: "Introductory biology laboratory course"}
 
 work:
-  - {year: "2018-Present", where: "Nurturing Wisdom Tutoring", what: "Mathematics and test-prep tutor."}
-  - {year: 2012-2015, where: "NYC Office of Chief Medical Examiner", what: "Forensic Molecular Biologist"}
-  - {year: 2011-2012, where: "NYC Deptartment of Health and Mental Hygiene", what: "Health Research Training Intern"}
-  - {year: 2008-2011, where: "Working Families Party", what: "Field Manager and Administrative Assistant"}
+  - {year: "2018-Present", where: "at Nurturing Wisdom Tutoring", what: "Tutor", description: "Highly-rated individual tutoring for grades 7-12 in science, mathematics, reading, language, and writing. Provide tutoring of content and test-preparation strategies for High School Entrance Exams and SATs."}
+  - {year: 2012-2015, where: "at NYC Office of Chief Medical Examiner", what: "Forensic Molecular Biologist", description: "Examined evidence for the presence of biological fluids, performed serological and DNA analysis techniques, analyzed data and performed statistical analysis, wrote reports, and provided expert scientific testimony in court."}
+  - {year: 2011-2012, where: "at NYC Deptartment of Health", what: "Health Research Intern", description: "Accepted to the Health Research Training Program for a year-long internship with the Bureau of Environmental Disease Prevention. Received training in disease epidemiology, emergency preparedness and response, public health and outreach programs in environmental disease control and prevention, and emerging viral infections."}
+  - {year: 2008-2011, where: "at Working Families Party", what: "Field Manager & Administrative Assistant", description: "Performed administrative tasks including payroll, managing employees' healthcare coverage, bank deposits, and data entry. Organized informational events for the public, and served as Field Manager for multiple election and fundraising campaigns."}
   
 extra:
-  - {year: 2017, name: "Accepted to MicroMORPH summer course at Harvard University"}
-  - {year: "2016-Present", name: "Reviewer for International Journal of Botany, Oxford Bibliographies"}
-  - {year: 2017, name: "Volunteer at Garfield Park Conservatory"}
   - {year: 2018, name: "Recipient of the Graduate Teaching Award"}
+  - {year: 2017, name: "Accepted to MicroMORPH summer course at Harvard University"}
+  - {year: 2017, name: "Volunteer at Garfield Park Conservatory"}
 ---
 
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+library("googlesheets")
+library("dplyr")
+setwd("/Users/lucydelaney/rmd-cv/")
+
+```
+
 # Publications
+\vspace{-0.05cm}
+
+
+# Presentations
+
+\vspace{-0.05cm}
+
+```{r, eval = FALSE, echo = FALSE, message = FALSE, warning = FALSE}
+presentations <- read_csv() %>%
+  arrange(invited, desc(when))
+save(presentations, file = "presentations.rda")
+```
+
+```{r, eval = F, results = "asis", message = FALSE, warning = FALSE, echo = FALSE}
+load("presentations.rda")
+invited <- presentations %>%
+  filter(invited == 1) %>%
+  arrange(-when)
+glue::glue_data(invited, "**>where<** \\fn{>what<}",
+                "\\begin{quote}>gsub('\\\\*', '', who)<, \\href{>link<}{\">title<.\"}\\end{quote}",
+                .open = ">", .close = "<")
+```
+
+
+# Extracurricular 
 
 

@@ -323,20 +323,20 @@ $if(languages)$
 \section{markup languages}
 $languages$
 $endif$
-$if(attributes)$
-\section{defining attributes}
-$attributes$
+$if(licenses)$
+\section{licenses}
+$licenses$
 $endif$
 \end{aside}
 
 \section{Interests}
-\vspace{-0.45cm}
+\vspace{-0.55cm}
 $interests$
 \vspace{-0.25cm}
 
 
 \section{Education}
-\vspace{-0.45cm}
+\vspace{-0.55cm}
 $for(edu)$
     \textbf{$edu.degree$} $edu.description_1$ \fn{$edu.where$}
     $if(edu.description_2)$ 
@@ -347,33 +347,26 @@ $endfor$
 
 \vspace{-0.35cm}
 \section{Teaching}
-\vspace{-0.45cm}
+\vspace{-0.55cm}
 $for(class)$
   \textbf{$class.what$} \fn{$class.year$}\\
   $if(class.description)$
   \vspace{0.25cm}
-  $class.description$\\
+  \small{$class.description$}\\
   $endif$
 $endfor$
 
 \vspace{-0.75cm}
 \section{Professional Experience}
-\vspace{-0.45cm}
+\vspace{-0.55cm}
 $for(work)$
-  \textbf{$work.where$} \fn{$work.year$}\\
-  $if(work.what)$
-  \vspace{0.25cm}
-  $work.what$\\
-  $endif$
+    \textbf{$work.what$} $work.where$ \fn{$work.year$}
+    $if(work.description)$ 
+    \vspace{-0.40cm}
+     $work.description$
+     $endif$ 
 $endfor$
 
-\vspace{-0.75cm}
-\section{Extracurricular}
-\vspace{-0.65cm}
-\TabPositions{2cm}
-$for(extra)$
-    $extra.year$ \tab{$extra.name$} \\
-$endfor$
 \newgeometry{left=2cm,top=2cm,right=2cm,bottom=2cm}
 
 $body$
