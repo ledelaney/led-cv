@@ -259,7 +259,10 @@ $endfor$
   \let\section\oldsection
 }
 
-\usepackage[colorlinks=true]{hyperref}
+\usepackage[colorlinks=false, 
+linkbordercolor = {cyan}, 
+pdfborderstyle={/S/U}]{hyperref}
+
 \usepackage{tikz}
 
 \newcommand{\rolefont}{%
@@ -354,11 +357,11 @@ $for(edu)$
   \vspace{-0.15cm}
 $endfor$
 
-\vspace{-0.18cm}
+\vspace{-0.15cm}
 \section{Teaching}
 \vspace{-0.55cm}
 $for(class)$
-    \textbf{$class.what$} $class.description_1$ \fn{$class.year$}
+    \textbf{$class.what$} \textit{$class.description_1$} \fn{$class.year$}
     $if(class.description_2)$ 
     \vspace{-0.40cm}
       $class.description_2$
@@ -366,7 +369,7 @@ $for(class)$
     \vspace{-0.15cm}
 $endfor$
 
-\vspace{-0.18cm}
+\vspace{-0.15cm}
 \section{Professional Experience}
 \vspace{-0.55cm}
 $for(work)$

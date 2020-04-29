@@ -14,18 +14,18 @@ programming: "R"
 languages: "$\LLaTeX$, HTML, Markdown, & Rmarkdown"
 github: "ledelaney"
 twitter: 
-licenses: "Illinois Substitute Teaching License, FCC Technician Class Radio License"
-interests: "Evolution outreach & education, macroevolution, the evolution of plant breeding systems, the nature of adaptation, `R` for data manipulation & visualization, `R` in undergraduate education"
+licenses: "Illinois Substitute Teaching License & FCC Technician Class Radio License"
+interests: "Evolution outreach & education, macroevolution, the evolution of plant breeding systems, the nature of adaptation, `R` for data manipulation & visualization, `R` for undergraduate education"
 edu:
-  - {degree: PhD student, where: University of Illinois at Chicago, description_1: "in Ecology and Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant Patterns and How We Understand Them_"}
-  - {degree: MA, where: Hunter College of the City University of New York, description_1: "in Molecular and Cellular Biology"}
-  - {degree: BS, where: John Jay College of the City University of New York, description_1: "in Forensic Molecular Biology, Philosophy"}
+  - {degree: PhD student, where: University of Illinois at Chicago, description_1: "in Ecology & Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant Patterns and How We Understand Them_"}
+  - {degree: MA, where: CUNY Hunter College, description_1: "in Molecular & Cellular Biology, 2016"}
+  - {degree: BS, where: CUNY John Jay College, description_1: "in Forensic Molecular Biology & Philosophy, 2012"}
   
 class:
-  - {year: "2019-Present", what: "BIOS220", description_1: "Molecular and Mendelian Genetics", description_2: "Sophomore-level genetics course focusing on Mendelian inheritance patterns and molecular mechanisms of inheritance. Responsible for online transition, digital course materials, Blackboard, etc."}
-  - {year: "Spring 2019", what: "BIOS230", description_1: "Ecology and Evolution", description_2: "Sophomore-level course with emphasis on basic ecological systems and ecosystem dynamics, and evolutionary principles. Responsible for weekly office hours and assignment construction and grading."}
-  - {year: 2017-2018, what: "BIOS430", description_1: "Evolution", description_2: "Upper-division, programming-focused Evolution course."}
-  - {year: 2016-2017, what: "BIOS120", description_1: "Biology of Populations and Communities", description_2: "Introductory biology laboratory course with emphasis on ecological and evolutionary principles."}
+  - {year: "2019-Present", what: "BIOS 220", description_1: "Molecular and Mendelian Genetics", description_2: "Sophomore-level course focusing on Mendelian inheritance patterns and molecular mechanisms of inheritance. Managed transition from in-person to online format. Responsible for teaching discussion section, creating digital course materials and exams, grading, and Blackboard administration."}
+  - {year: "Spring 2019", what: "BIOS 230", description_1: "Ecology and Evolution", description_2: "Sophomore-level course with emphasis on basic ecological systems, ecosystem dynamics, and evolutionary principles. Responsible for weekly office hours, assignment creation, and grading."}
+  - {year: 2017-2018, what: "BIOS 430", description_1: "Evolution", description_2: "Upper-division, programming-focused course on evolutionary theory and principles. Responsible for weekly office hours and debugging, quiz materials, and grading of `R` programming assignments."}
+  - {year: 2016-2017, what: "BIOS 120", description_1: "Biology of Populations and Communities", description_2: "Introductory biology laboratory course with emphasis on ecological and evolutionary principles. Responsible for weekly laboratory instruction, office hours, and grading."}
 
 work:
   - {year: "2018-Present", where: "at Nurturing Wisdom Tutoring", what: "Tutor", description: "Highly-rated individual tutoring for grades 7-12 in science, mathematics, reading, language, and writing. Provide tutoring of content and test-preparation strategies for High School Entrance Exams and SATs."}
@@ -51,9 +51,17 @@ setwd("/Users/lucydelaney/rmd-cv/")
 ```
 
 # Extracurricular
+\vspace{-0.35cm}
+
++ 2019-Present \hspace{9.1mm} Created a website for student materials and tutorials  \href{https://ledelaney.github.io/bios220/}{in BIOS 220: Genetics}
++ 2017-Present \hspace{9.1mm} Reviewer for International Journal of Botany, Oxford Bibliographies
++ 2018 \hspace{22mm} Recipient of the Graduate Teaching Award
++ 2017 \hspace{22mm} Accepted to NSF-funded summer workshop on diversification rates & macroevolution
++ 2017 \hspace{22mm} Accepted to MicroMORPH Plant Anatomy summer course at Harvard University
++ 2016 \hspace{22mm} Volunteer at Garfield Park Conservatory
 
 # Presentations
-\vspace{-0.05cm}
+\vspace{-0.15cm}
 
 ```{r, eval = T, echo = FALSE, message = FALSE, warning = FALSE}
 presentations <- read_csv(file = "presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
@@ -71,5 +79,5 @@ glue::glue_data(not.invited, "**>where<** >what< \\fn{>when<}",
 ```
 
 # Publications
-\vspace{-0.05cm}
+\vspace{-0.15cm}
 
