@@ -8,7 +8,7 @@ first: "Lucy E "
 last: "Delaney"
 email: "ldelan5@uic.edu"
 address: "Chicago, IL 60622"
-website: "ledelaney.github.io"
+website: "ledelaney.github.io/"
 googlescholar: 
 orcid: 
 programming: "R"
@@ -46,17 +46,17 @@ setwd("/Users/lucydelaney/rmd-cv/")
 ```
 
 # Extracurricular
-\vspace{-0.45cm}
+\vspace{-0.55cm}
 
 + 2019-Present \hspace{9.1mm} Created a website for student materials and tutorials  \href{https://ledelaney.github.io/bios220/}{in BIOS 220: Genetics}
 + 2017-Present \hspace{9.1mm} Reviewer for International Journal of Botany, Oxford Bibliographies
-+ 2018 \hspace{22mm} Recipient of the Graduate Teaching Award
++ 2018 \hspace{22mm} Recipient of the Biological Sciences Department Graduate Teaching Award
 + 2017 \hspace{22mm} Accepted to NSF-funded summer workshop on diversification rates & macroevolution
 + 2017 \hspace{22mm} Accepted to MicroMORPH Plant Anatomy summer course at Harvard University
 + 2016 \hspace{22mm} Volunteer at Garfield Park Conservatory
 
 # Presentations
-\vspace{-0.45cm}
+\vspace{-0.55cm}
 
 ```{r, eval = T, echo = FALSE, message = FALSE, warning = FALSE}
 presentations <- read_csv(file = "presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
@@ -76,5 +76,5 @@ glue::glue_data(not.invited, "**>where<** >what< \\fn{>when<}",
 ```
 
 # Publications
-\vspace{-0.45cm}
+\vspace{-0.55cm}
 

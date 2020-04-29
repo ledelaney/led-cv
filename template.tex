@@ -260,8 +260,8 @@ $endfor$
 }
 
 \usepackage[colorlinks=false, 
-linkbordercolor = {cyan}, 
-pdfborderstyle={/S/U}]{hyperref}
+urlbordercolor=magenta,
+pdfborderstyle={/S/U/W 0.5}]{hyperref}
 
 \usepackage{tikz}
 
@@ -312,7 +312,7 @@ $if(email)$
 $endif$
 $if(website)$
 \section{website}
-\href{$website$}{$website$}
+\href{https://$website$}{$website$}
 $endif$
 $if(googlescholar)$
 \section{google scholar}
