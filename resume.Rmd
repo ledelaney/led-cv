@@ -12,7 +12,7 @@ website: "ledelaney.github.io/"
 googlescholar: 
 orcid: 
 programming: "R"
-languages: "$\LLaTeX$, HTML, Markdown, & Rmarkdown"
+languages: "$\LLaTeX$, HTML, Markdown, & RMarkdown"
 github: "ledelaney"
 twitter: 
 licenses: "Illinois Substitute Teaching License & FCC Technician Class Radio License"
