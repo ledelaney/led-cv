@@ -53,7 +53,7 @@ setwd("/Users/lucydelaney/rmd-cv/")
 + 2018 \hspace{22mm} Created programming tutorials for use in \href{https://github.com/ledelaney/GeneralEcologyMaterials}{BIOS 331: General Ecology Laboratory}
 + 2018 \hspace{22mm} Recipient of the Biological Sciences Department Graduate Teaching Award
 + 2017 \hspace{22mm} Accepted to NSF-funded summer workshop on diversification rates & macroevolution
-+ 2017 \hspace{22mm} Accepted to MicroMORPH Plant Anatomy summer course at Harvard University
++ 2017 \hspace{22mm} Accepted to \href{https://www.arboretum.harvard.edu/tracing-evolution-form-function/}{MicroMORPH Plant Anatomy summer course} at Harvard University
 + 2016 \hspace{22mm} General horticulture volunteer at Garfield Park Conservatory
 
 # Presentations
