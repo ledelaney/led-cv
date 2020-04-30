@@ -3,7 +3,7 @@ output:
   pdf_document:
     latex_engine: xelatex
     template: template.tex
-date: April 28, 2020
+date: April 30, 2020
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
@@ -19,8 +19,8 @@ licenses: "Illinois Substitute Teaching License & FCC Technician Class Radio Lic
 interests: "Evolution outreach & education, macroevolution, the evolution of plant breeding systems, the nature of adaptation, data manipulation & visualization with `tidyverse`, `R` for undergraduate education"
 edu:
   - {degree: PhD student, where: University of Illinois at Chicago, description_1: "in Ecology & Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant patterns and how we understand them_"}
-  - {degree: MA, where: "CUNY: Hunter College", description_1: "in Molecular & Cellular Biology, 2016"}
-  - {degree: BS, where: "CUNY: John Jay College", description_1: "in Forensic Molecular Biology, Philosophy, 2012"}
+  - {degree: MA, where: "Hunter College (CUNY)", description_1: "in Molecular & Cellular Biology, 2016"}
+  - {degree: BS, where: "John Jay College (CUNY)", description_1: "in Forensic Molecular Biology, Philosophy, 2012"}
   
 class:
   - {year: "2019-Present", what: "BIOS 220", description_1: "Molecular and Mendelian Genetics", description_2: "Sophomore-level course focusing on Mendelian inheritance patterns and molecular mechanisms of inheritance. Helped managed transition from in-person to online format. Responsible for teaching discussion section, creating digital course materials and exams, grading, and Blackboard administration."}
