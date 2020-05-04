@@ -3,7 +3,7 @@ output:
   pdf_document:
     latex_engine: xelatex
     template: template.tex
-date: April 30, 2020
+date: May 4, 2020
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
@@ -48,7 +48,8 @@ setwd("/Users/lucydelaney/rmd-cv/")
 # Extracurricular
 \vspace{-0.55cm}
 
-+ 2019-Present \hspace{9.1mm} Created a website to manage student materials and tutorials in  \href{https://ledelaney.github.io/bios220/}{BIOS 220: Genetics}
++ 2020-Present \hspace{9.1mm} Developed \href{https://github.com/ledelaney/220bb-calculator}{R functions for automated Blackboard grade finalization.}
++ 2020-Present \hspace{9.1mm} Created a website to manage student materials and tutorials in  \href{https://ledelaney.github.io/bios220/}{BIOS 220: Genetics}
 + 2017-Present \hspace{9.1mm} Reviewer for International Journal of Botany, Oxford Bibliographies
 + 2018 \hspace{22mm} Created programming tutorials for use in \href{https://github.com/ledelaney/GeneralEcologyMaterials}{BIOS 331: General Ecology Laboratory}
 + 2018 \hspace{22mm} Recipient of the Biological Sciences Department Graduate Teaching Award
