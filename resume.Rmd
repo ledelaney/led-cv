@@ -3,7 +3,7 @@ output:
   pdf_document:
     latex_engine: xelatex
     template: template.tex
-date: May 4, 2020
+date: May 11, 2020
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
@@ -48,14 +48,16 @@ setwd("/Users/lucydelaney/rmd-cv/")
 # Extracurricular
 \vspace{-0.55cm}
 
-+ 2020-Present \hspace{9.1mm} Developed \href{https://github.com/ledelaney/220bb-calculator}{R functions for automated Blackboard grade finalization.}
-+ 2020-Present \hspace{9.1mm} Created a website to manage student materials and tutorials in  \href{https://ledelaney.github.io/bios220/}{BIOS 220: Genetics}
-+ 2017-Present \hspace{9.1mm} Reviewer for International Journal of Botany, Oxford Bibliographies
-+ 2018 \hspace{22mm} Created programming tutorials for use in \href{https://github.com/ledelaney/GeneralEcologyMaterials}{BIOS 331: General Ecology Laboratory}
-+ 2018 \hspace{22mm} Recipient of the Biological Sciences Department Graduate Teaching Award
-+ 2017 \hspace{22mm} Accepted to NSF-funded summer workshop on diversification rates & macroevolution
-+ 2017 \hspace{22mm} Accepted to \href{https://www.arboretum.harvard.edu/tracing-evolution-form-function/}{MicroMORPH Plant Anatomy summer course} at Harvard University
-+ 2016 \hspace{22mm} General horticulture volunteer at Garfield Park Conservatory
+\begin{itemize}[noitemsep]
+\item[]{2020-Present \hspace{9.1mm} Developed \href{https://github.com/ledelaney/220bb-calculator}{R functions for automated Blackboard grade finalization}}
+\item[]{2020-Present \hspace{9.1mm} Created a website to manage student materials and tutorials in  \href{https://ledelaney.github.io/bios220/}{BIOS 220: Genetics}}
+\item[]{2017-Present \hspace{9.1mm} Reviewer for International Journal of Botany, Oxford Bibliographies}
+\item[]{2018 \hspace{22mm} Created programming tutorials for use in \href{https://github.com/ledelaney/GeneralEcologyMaterials}{BIOS 331: General Ecology Laboratory}}
+\item[]{2018 \hspace{22mm} Recipient of the Biological Sciences Department Graduate Teaching Award}
+\item[]{2017 \hspace{22mm} Accepted to NSF-funded summer workshop on diversification rates \& macroevolution}
+\item[]{2017 \hspace{22mm} Accepted to \href{https://www.arboretum.harvard.edu/tracing-evolution-form-function/}{MicroMORPH Plant Anatomy summer course} at Harvard University}
+\item[]{2016 \hspace{22mm} General horticulture volunteer at Garfield Park Conservatory}
+\end{itemize}
 
 # Presentations
 \vspace{-0.55cm}
