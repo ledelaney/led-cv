@@ -64,6 +64,7 @@ $for(polyglossia-otherlangs)$
 $endfor$
 \fi
 $endif$
+
 $if(csl-refs)$
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
@@ -72,17 +73,21 @@ $if(csl-refs)$
 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
 {\par}
 $endif$
+
 $if(natbib)$
 \usepackage{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
 $endif$
+
 $if(biblatex)$
 \usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
 $if(biblatexoptions)$\ExecuteBibliographyOptions{$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$}$endif$
+
 $for(bibliography)$
 \addbibresource{$bibliography$}
 $endfor$
 $endif$
+
 $if(listings)$
 \usepackage{listings}
 $endif$
@@ -118,9 +123,8 @@ $if(strikeout)$
 $endif$
 $if(indent)$
 $else$
-
-
 $endif$
+
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
