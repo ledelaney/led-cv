@@ -90,5 +90,6 @@ glue::glue_data(not.invited, "**>where<** >what< \\fn{>when<}",
 #{\">title<.\"}
 ```
 
-# Publications
+\section{Publications}
+
 \vspace{-0.55cm}
