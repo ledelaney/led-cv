@@ -64,8 +64,8 @@ setwd("/Users/lucydelaney/rmd-cv/")
 \begin{itemize}[noitemsep]
 \item[]{2020-Present \hspace{9.1mm} Developed \href{https://github.com/ledelaney/220bb-calculator}{R functions for automated Blackboard grade finalization}}
 \item[]{2020-Present \hspace{9.1mm} Created a website to manage student materials and tutorials in  \href{https://ledelaney.org/BIOS_220/}{BIOS 220: Genetics}}
-\item[]{2017-Present \hspace{9.1mm} Reviewer for International Journal of Botany, Oxford Bibliographies}
 \item[]{2018 \hspace{22mm} Created programming tutorials for use in \href{https://github.com/ledelaney/GeneralEcologyMaterials}{BIOS 331: General Ecology Laboratory}}
+\item[]{2017-Present \hspace{9.1mm} Reviewer for International Journal of Botany, Oxford Bibliographies}
 \item[]{2016 \hspace{22mm} General horticulture volunteer at Garfield Park Conservatory}
 \end{itemize}
 
