@@ -11,8 +11,8 @@ address: "Chicago, IL 60622"
 website: "ledelaney.github.io/"
 googlescholar: 
 orcid: 
-programming: "R, CSS"
-languages: "$\LLaTeX$, HTML, Markdown, & RMarkdown"
+programming: "R"
+languages: "$\LLaTeX$, HTML & CSS, Markdown & RMarkdown"
 github: "ledelaney"
 twitter: 
 licenses: "Illinois Substitute Teaching License & FCC Technician Class Radio License"
