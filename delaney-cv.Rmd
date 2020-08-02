@@ -3,7 +3,7 @@ output:
   pdf_document:
     latex_engine: xelatex
     template: template.tex
-date: July 3, 2020
+date: August 7, 2020
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
@@ -18,7 +18,7 @@ twitter:
 licenses: "Illinois Substitute Teaching License & FCC Technician Class Radio License"
 interests: "Evolution outreach & education, macroevolution, the evolution of plant breeding systems, the nature of adaptation, data manipulation & visualization with `tidyverse`, `R` for undergraduate education"
 edu:
-  - {degree: PhD student, where: University of Illinois at Chicago, description_1: "in Ecology & Evolutionary Biology", description_2: "Thesis: _The Process of Natural Selection: Resultant patterns and how we understand them_"}
+  - {degree: PhD candidate, where: University of Illinois at Chicago, description_1: "in Ecology & Evolutionary Biology", description_2: "Thesis: _The Nature of Adaptation and the Epistemology of Natural Selection_"}
   - {degree: MA, where: "Hunter College (CUNY)", description_1: "in Molecular & Cellular Biology, 2016"}
   - {degree: BS, where: "John Jay College (CUNY)", description_1: "in Forensic Molecular Biology, Philosophy, 2012"}
   
