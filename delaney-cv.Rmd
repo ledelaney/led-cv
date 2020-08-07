@@ -3,7 +3,7 @@ output:
   pdf_document:
     latex_engine: xelatex
     template: template.tex
-date: August 6, 2020
+date: August 7, 2020
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
@@ -83,7 +83,7 @@ presentations <- read_csv(file = "presentations.csv", col_names = T, na = c(NA, 
 not.invited <- presentations %>%
   filter(invited == 0) %>%
   arrange(-when)
-glue::glue_data(not.invited, "**>event<** >where< \\hspace{1mm}| >what< \\fn{>when<}",
+glue::glue_data(not.invited, "**>event<** >where< \\hspace{1mm}|\\hspace{1mm} >what< \\fn{>when<}",
                 " \\vspace{-0.25cm} ",
                 "\\begin{quote}>gsub('\\\\*', '', who)<, \\href{>link<}{>title<.}\\end{quote}",
                 .open = ">", .close = "<")
