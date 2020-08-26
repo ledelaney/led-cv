@@ -13,6 +13,7 @@ googlescholar:
 orcid: 
 programming: "R"
 languages: "$\LLaTeX$, HTML & CSS, Markdown & RMarkdown"
+software: "Adobe Premiere, Adobe Illustrator, Microsoft Office Suite"
 github: "ledelaney"
 twitter: 
 licenses: "Illinois Substitute Teaching License & FCC Technician Class Radio License"
