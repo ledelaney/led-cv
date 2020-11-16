@@ -1,0 +1,187 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%PANDOC SPECIFIC SHIT, TAKEN FROM ANOTHER TEMPLATE...
+
+\documentclass[11pt,article,oneside]{memoir}   
+
+%Deal with margins and other geometry stuff
+\usepackage[]{geometry}
+\usepackage[document]{ragged2e}
+\usepackage{fontspec}
+
+\defaultfontfeatures{Path = /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/fontawesome/}
+
+\usepackage{fontawesome}
+\setmainfont{MinionPro-Regular.otf}[
+Path = /Library/Fonts/minion-pro-cufonfonts/,
+BoldFont = MinionPro-Bold.otf,
+ItalicFont = MinionPro-It.otf,
+BoldItalicFont  = MinionPro-BoldIt.otf]
+
+\def\myauthor{Lucy E Delaney}
+\def\mytitle{Vita}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{University of Illinois at Chicago}
+\def\myaddress{Department of Biological Sciences}
+\def\myemail{ldelan5@uic.edu}
+\def\myweb{http://ledelaney.github.io}
+\def\myphone{(718) 644-8035}
+\def\mytwitter{@emergentlylucy}
+\def\myversion{}
+\def\myrevision{}
+
+
+\def\myaffiliation{University of Illinois at Chicago}
+\def\myauthor{Lucy Delaney}
+\date{} % not used (revision control instead)
+\def\mykeywords{Lucy, Delaney, Lucy Delaney, Vita, CV, Resume, Biology}
+
+
+% Need to include this for refs with Pandoc
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+{$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+\everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+{\par}
+$endif$
+
+%Double-spacing or whatever...
+$if(linestretch)$
+\usepackage{setspace}
+\setstretch{$linestretch$}
+$endif$
+
+%Some of this is math package stuff, but honestly i don't really get
+%what most of it is doing
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{wasysym}
+
+%Numbered section spacing
+$if(numbersections)$
+\setcounter{secnumdepth}{2}
+$else$
+\setcounter{secnumdepth}{0}
+$endif$
+
+%For LIST spacing
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LUCY'S DOCUMENT PREAMBLE AND PACKAGES
+
+\widowpenalty10000
+\clubpenalty10000
+
+\usepackage{pdflscape}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{maroon}{HTML}{ab2e4b}
+\definecolor{light-gray}{gray}{0.95}
+
+\usepackage{tcolorbox}
+\newtcolorbox{blackbox}{
+  colback=light-gray,
+  colframe=black,
+  coltext=black,
+  boxsep=2pt,
+  arc=4pt}
+
+%\usepackage[round]{natbib}
+\usepackage[natbibapa]{apacite} 
+\usepackage[hyphens]{url}
+
+
+%Bunch of hyperlink shit
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=violet,
+    filecolor=magenta,      
+    urlcolor=violet,
+    citecolor = black
+}
+
+%Need all these for graphics and tables
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{array}
+
+\usepackage{float}
+%\floatplacement{table}{p}
+%\restylefloat{table}
+%\newfloat{type}{placement}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% START OF THE DOCUMENT BODY
+\begin{document}
+
+%% Choose fonts for use with xelatex
+%% Minion and Myriad are widely available, from Adobe. 
+%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
+%% and is worth every penny. Any good monospace font will work fine, though.
+%% Consolas or inconsolata are good alternatives.
+%\setromanfont[Mapping={tex-text}, 
+%  Numbers={OldStyle},
+%  Ligatures={Common}]{Minion Pro}
+%\setsansfont[Mapping=tex-text,
+%  Ligatures={Common}, 
+%  Colour=AA0000]{Unit-Medium}
+%\setmonofont[Mapping=tex-text,Scale=0.72]{PragmataPro} 
+
+%\newfontface\scheader[SmallCapsFont={Minion Pro},SmallCapsFeatures={Letters=SmallCaps}]{Minion Pro}
+
+%\newfontface\addressblock[Mapping={tex-text}, 
+%  Numbers={OldStyle},
+%  Ligatures={Common}]{Minion Pro Medium Caption}
+
+  %%%------------------------------------------------------------------------
+%%% Local commands
+%%%------------------------------------------------------------------------
+
+%% Marginal header
+%% Note: as the document goes on you may need to introduce a (gradually increasing)
+%% \vspace element to keep the marginal header pleasingly aligned with the first 
+%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or 
+%% \marginhead{{\vskip 0.8em}Service}. Experiment as needed.
+
+\newcommand{\marginhead}[1]{\textcolor{red}{\marginpar{\textsf{{\footnotesize\vspace{-1em}\flushright #1}}}}}
+
+
+%% [optional] custom ampersand (font consistent with the one chosen above)
+% \newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Minion Pro Medium}\selectfont\&\,}}
+
+%% No bullets on labels
+\renewcommand{\labelitemi}{~} 
+
+%% Custom hanging indent for vita items
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+%\def\ind{\hangindent=18pt\hangafter=1 \noindent}
+\def\labelitemi{~}
+\renewcommand{\labelitemii}{~}
+
+%%%------------------------------------------------------------------------
+%%% Page layout
+%%%------------------------------------------------------------------------
+
+% These lines will insert git revision info in the footer, using the vc
+% package---see docs for vc package for details. Comment out this line
+% if you're not using vc, and also remove the \input{vc} line above.
+%\pagestyle{kjh}
+%\thispagestyle{kjhgit}
+
+
+
+%%%%%%%%%%%%%% DOCUMENT BODY
+$body$
+
+\end{document}
