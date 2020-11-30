@@ -169,6 +169,8 @@ $endfor$
 % Lucy's Updates
 % ----------------------------------
 
+\usepackage{lastpage}
+
 % Custom section fonts
 \usepackage{sectsty}
 
@@ -313,8 +315,10 @@ pdfborderstyle={/S/U/W 0.5}]{hyperref}
 \parindent0em\parskip1em
 \usepackage{tikzsymbols}
 \begin{document}
-\rfoot{\tiny\textit{{Version: $date$}}}
-\pagenumbering{gobble}
+\rfoot{\tiny{$date$ | page \thepage of 2}}
+%\pageref{LastPage}
+%\lfoot{\tiny\textit{{\thepage}}}
+%\pagenumbering{gobble}
 \header{$first$}{$last$}{graduate student in biological sciences} 
 
 \begin{aside}
@@ -346,6 +350,10 @@ $if(languages)$
 \section{document markup}
 $languages$
 $endif$
+$if(software)$
+\section{software}
+$software$
+$endif$
 $if(licenses)$
 \section{licenses}
 $licenses$
@@ -355,7 +363,7 @@ $endif$
 \section{Interests}
 \vspace{-0.55cm}
 $interests$
-\vspace{-0.25cm}
+%\vspace{-0.25cm}
 
 
 \section{Education}
@@ -363,39 +371,70 @@ $interests$
 $for(edu)$
     \textbf{$edu.degree$} $edu.description_1$ \fn{$edu.where$}
     $if(edu.description_2)$ 
-    \vspace{-0.37cm}
+    \vspace{-0.3cm}
      $edu.description_2$
      $endif$ 
   \vspace{-0.15cm}
 $endfor$
 
-\vspace{-0.15cm}
-\section{Teaching}
+\vspace{0.2cm}
+\section{University Teaching}
 \vspace{-0.55cm}
-$for(class)$
-    \textbf{$class.what$} $class.description_1$ \fn{$class.year$}
-    $if(class.description_2)$ 
-    \vspace{-0.40cm}
-      $class.description_2$
+$for(uniclass)$
+    \textbf{$uniclass.what$} $uniclass.description_1$ \fn{$uniclass.year$}
+    $if(uniclass.description_2)$ 
+    \vspace{-0.35cm}
+      $uniclass.description_2$
      $endif$ 
     \vspace{-0.15cm}
 $endfor$
 
-\vspace{-0.15cm}
+\vspace{0.2cm}
+\section{Community Teaching}
+\vspace{-0.55cm}
+$for(commclass)$
+    \textbf{$commclass.what$} $commclass.description_1$ \fn{$commclass.year$}
+    $if(commclass.description_2)$ 
+    \vspace{-0.35cm}
+      $commclass.description_2$
+     $endif$ 
+    \vspace{-0.15cm}
+$endfor$
+
+\newgeometry{left=2.6cm,top=2.6cm,right=2.6cm,bottom=2.6cm}
+
+\vspace{0.3cm}
+\section{Teaching Honors \& Awards}
+\vspace{-0.55cm}
+\begin{itemize}[noitemsep]
+$for(teachinghons)$
+\item[]{$teachinghons.year$ \hspace{5mm} $teachinghons.what$}
+$endfor$
+\end{itemize}
+
+\vspace{0.3cm}
+\section{Other Awards \& Training}
+\vspace{-0.55cm}
+\begin{itemize}[noitemsep]
+$for(otherhons)$
+\item[]{$otherhons.year$ \hspace{5mm} $otherhons.what$}
+$endfor$
+\end{itemize}
+
+
+$body$
+
+\vspace{0.3cm}
 \section{Professional Experience}
 \vspace{-0.55cm}
 $for(work)$
     \textbf{$work.what$} $work.where$ \fn{$work.year$}
     $if(work.description)$ 
-    \vspace{-0.40cm}
+    \vspace{-0.30cm}
      $work.description$
      $endif$
     \vspace{-0.15cm}
 $endfor$
-
-\newgeometry{left=2cm,top=2cm,right=2cm,bottom=2cm}
-
-$body$
 
 $if(natbib)$
 $if(bibliography)$

@@ -3,7 +3,8 @@ output:
   pdf_document:
     latex_engine: xelatex
     template: template.tex
-date: November 8, 2020
+    keep_tex: false
+date: November 30, 2020
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
@@ -12,29 +13,47 @@ website: "ledelaney.github.io/"
 googlescholar: 
 orcid: 
 programming: "R"
-languages: "$\LLaTeX$, HTML & CSS, Markdown & RMarkdown"
-software: "Adobe Premiere, Adobe Illustrator, Microsoft Office Suite"
+languages: "$\LLaTeX$, HTML & CSS, R Markdown"
+software: "Adobe Illustrator, Microsoft Office Suite"
 github: "ledelaney"
 twitter: 
-licenses: "Illinois Substitute Teaching License & FCC Technician Class Radio License"
-interests: "Conceptual understanding of evolutionary principles, macroevolution, the evolution of plant breeding systems, data manipulation & visualization with `tidyverse`, teaching with `R`"
+licenses: "Illinois Substitute Teaching, FCC Technician Class Radio" 
+interests: "Conceptual understanding of evolutionary principles, `R` for undergraduate education, macroevolution, the evolution of plant breeding systems, data manipulation & visualization with `tidyverse`"
 edu:
   - {degree: PhD candidate, where: University of Illinois at Chicago, description_1: "in Ecology & Evolutionary Biology", description_2: "Dissertation: _The Nature of Adaptation and the Epistemology of Natural Selection_"}
   - {degree: MA, where: "Hunter College (CUNY)", description_1: "in Molecular & Cellular Biology, 2016"}
   - {degree: BS, where: "John Jay College (CUNY)", description_1: "in Forensic Molecular Biology, Philosophy, 2012"}
   
-class:
+uniclass:
   - {year: "Fall 2019 - Summer 2020", what: "BIOS 220", description_1: "Mendelian and Molecular Genetics", description_2: "Sophomore-level course focusing on Mendelian inheritance patterns and molecular mechanisms of inheritance. Helped managed transition from in-person to online delivery. Responsible for teaching discussion section, creating digital course materials & exams, grading, and Blackboard administration."}
+  - {year: "Summer 2019", what: "BIOS 331", description_1: "General Ecology Laboratory", description_2: "Application of ecological and evolutionary concepts with hands-on experiments and field trips to local natural areas. Responsible for weekly laboratory instruction, office hours, and grading."}
   - {year: "Spring 2019", what: "BIOS 230", description_1: "Ecology and Evolution", description_2: "Sophomore-level course with emphasis on basic ecological systems, ecosystem dynamics, and evolutionary principles. Responsible for weekly office hours, assignment creation, and grading."}
   - {year: "Fall 2017 - Fall 2018", what: "BIOS 430", description_1: "Evolution", description_2: "Upper-division, programming-focused course on evolutionary theory and principles. Responsible for weekly office hours & debugging, quiz materials, and grading of `R` programming assignments."}
   - {year: 2016-2017, what: "BIOS 120", description_1: "Biology of Populations and Communities", description_2: "Introductory biology laboratory course with emphasis on ecological and evolutionary principles. Responsible for weekly laboratory instruction, office hours, and grading."}
+  
+commclass:
+  - {year: "2020-Present", what: "UIC Biological Sciences Department", description_1: "Course Builder & Trainer", description_2: "Trained in online instructional design & pedagogy, and software relevant to online teaching & learning. Assisting Biological Sciences Department faculty members in transitioning their courses online, and managing technical aspects of courses throughout online delivery."}
+  - {year: 2018-2020, what: "Nurturing Wisdom Tutoring", description_1: "Tutor", description_2: "Highly-rated individual tutoring for grades 7-12 in test preparation (SAT and high school entrance exams), science, mathematics, and writing."}
+  - {year: 2015-2016, what: "Chicago-area Charter Schools", description_1: "Substitute Teacher", description_2: "Substitute teacher for elementary, middle, and high school classes."}
 
 work:
-  - {year: "2020-Present", where: "at UIC Biological Sciences Department", what: "Course Builder", description: "Trained in online instructional design & pedagogy, and software relevant to online teaching & learning. Assisting Biological Sciences Department faculty members in transitioning their courses online, and managing technical aspects of courses throughout online delivery."}
-  - {year: 2018-2020, where: "at Nurturing Wisdom Tutoring", what: "Tutor", description: "Highly-rated individual tutoring for grades 7-12 in test preparation (SAT and HSETs), science, mathematics, and writing."}
   - {year: 2012-2015, where: "at NYC Office of Chief Medical Examiner", what: "Forensic Molecular Biologist", description: "Examined evidence for the presence of biological fluids, performed serological & DNA analysis techniques, analyzed data & performed statistical analyses, wrote reports, and provided expert scientific testimony in court."}
   - {year: 2011-2012, where: "at NYC Department of Health", what: "Health Research Intern", description: "Accepted to the Health Research Training Program for a year-long internship with the Bureau of Environmental Disease Prevention. Received training in disease epidemiology, emergency preparedness & response, public health and outreach programs in environmental disease control & prevention, and emerging viral infections."}
   # - {year: 2008-2011, where: "at Working Families Party", what: "Field Manager & Administrative Assistant", description: "Responsible for payroll, managing employees' healthcare coverage, bank deposits, and data entry. Organized informational events for the public, and served as Field Manager for multiple election and fundraising campaigns."}
+
+teachinghons:
+  - {year: 2020, what: "Nominated for the Graduate Student Excellence in Teaching and Mentoring Award"}
+  - {year: 2020, what: "Recipient of the Biological Sciences Department Graduate Teaching Award for BIOS 220"}
+  - {year: 2018, what: "Recipient of the Biological Sciences Department Graduate Teaching Award for BIOS 430"}
+
+otherhons:
+  - {year: 2020, what: "Participant in the \\href{https://chircollab.github.io/}{2020 Chicago `R` Collaborative Conference}"}
+  - {year: 2018, what: "Recipient of the Biological Sciences Department Travel Award"}
+  - {year: 2018, what: "Reviewer for International Journal of Botany, Oxford Bibliographies"}
+  - {year: 2017, what: "Accepted to NSF-funded workshop on Bayesian analysis of macroevolutionary mixtures"}
+  - {year: 2017, what: "Recipient of the Biological Sciences Department Travel Award"}
+  - {year: 2017, what: "Accepted to \\href{https://www.arboretum.harvard.edu/tracing-evolution-form-function/}{microMORPH Plant Anatomy Summer Course} at Harvard University"}
+  - {year: 2016, what: "General horticulture volunteer at Garfield Park Conservatory"}
   
 bibliography: mypapers.bib
 csl: apa.csl
@@ -47,35 +66,12 @@ setwd("/Users/lucydelaney/rmd-cv/")
 
 ```
 
-# Honors, Fellowships \& Awards
-\vspace{-0.55cm}
-
-\begin{itemize}[noitemsep]
-\item[]{2020 \hspace{22mm} Recipient of the Biological Sciences Department Graduate Teaching Award for BIOS 220}
-\item[]{2018 \hspace{22mm} Recipient of the Biological Sciences Department Travel Award}
-\item[]{2018 \hspace{22mm} Recipient of the Biological Sciences Department Graduate Teaching Award for BIOS 430}
-\item[]{2017 \hspace{22mm} Accepted to NSF-funded summer workshop on diversification rates \& macroevolution}
-\item[]{2017 \hspace{22mm} Recipient of the Biological Sciences Department Travel Award}
-\item[]{2017 \hspace{22mm} Accepted to \href{https://www.arboretum.harvard.edu/tracing-evolution-form-function/}{microMORPH Plant Anatomy Summer Course} at Harvard University}
-\end{itemize}
-
-# Extracurricular
-\vspace{-0.55cm}
-
-\begin{itemize}[noitemsep]
-\item[]{2020-Present \hspace{9.1mm} Developed \href{https://github.com/ledelaney/220bb-calculator}{R functions for automated Blackboard grade finalization}}
-\item[]{2020-Present \hspace{9.1mm} Created a website to manage student materials and tutorials in  \href{https://ledelaney.org/BIOS_220/}{BIOS 220: Genetics}}
-\item[]{2020 \hspace{22mm} Participant in the \href{https://chircollab.github.io/}{2020 Chicago R Collaborative Conference}}
-\item[]{2018 \hspace{22mm} Created programming tutorials for use in \href{https://github.com/ledelaney/GeneralEcologyMaterials}{BIOS 331: General Ecology Laboratory}}
-\item[]{2017-Present \hspace{9.1mm} Reviewer for International Journal of Botany, Oxford Bibliographies}
-\item[]{2016 \hspace{22mm} General horticulture volunteer at Garfield Park Conservatory}
-\end{itemize}
-
+\vspace{0.3cm}
 # Presentations
 \vspace{-0.55cm}
 
 ```{r, eval = T, echo = FALSE, message = FALSE, warning = FALSE}
-presentations <- read_csv(file = "presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
+presentations <- read_csv(file = "/Users/lucydelaney/rmd-cv/presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
   arrange(invited, desc(when))
 
 ```
@@ -92,6 +88,7 @@ glue::glue_data(not.invited, "**>event<** >where< \\hspace{1mm}|\\hspace{1mm} >w
 #{\">title<.\"}
 ```
 
+\vspace{0.3cm}
 \section{Publications}
-
 \vspace{-0.55cm}
+
