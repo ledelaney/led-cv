@@ -2,8 +2,8 @@
 output:
   pdf_document:
     latex_engine: xelatex
-    template: template.tex
-    keep_tex: false
+    template: input/template.tex
+    keep_tex: true
 date: November 30, 2020
 first: "Lucy E"
 last: "Delaney"
@@ -13,7 +13,7 @@ website: "ledelaney.github.io/"
 googlescholar: 
 orcid: 
 programming: "R"
-languages: "$\LLaTeX$, HTML & CSS, R Markdown"
+languages: "_LaTeX_, HTML & CSS, R Markdown"
 software: "Adobe Illustrator, Microsoft Office Suite"
 github: "ledelaney"
 twitter: 
@@ -55,8 +55,8 @@ otherhons:
   - {year: 2017, what: "Accepted to \\href{https://www.arboretum.harvard.edu/tracing-evolution-form-function/}{microMORPH Plant Anatomy Summer Course} at Harvard University"}
   - {year: 2016, what: "General horticulture volunteer at Garfield Park Conservatory"}
   
-bibliography: mypapers.bib
-csl: apa.csl
+bibliography: input/mypapers.bib
+csl: input/apa.csl
 nocite: '@*'
 ---
 
@@ -71,14 +71,14 @@ setwd("/Users/lucydelaney/rmd-cv/")
 \vspace{-0.55cm}
 
 ```{r, eval = T, echo = FALSE, message = FALSE, warning = FALSE}
-presentations <- read_csv(file = "/Users/lucydelaney/rmd-cv/presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
+presentations <- read_csv(file = "/Users/lucydelaney/rmd-cv/input/presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
   arrange(invited, desc(when))
 
 ```
 
 ```{r, eval = T, results = "asis", message = FALSE, warning = FALSE, echo = FALSE}
 not.invited <- presentations %>%
-  filter(invited == 0) %>%
+  dplyr::filter(invited == 0) %>%
   arrange(-when)
 glue::glue_data(not.invited, "**>event<** >where< \\hspace{1mm}|\\hspace{1mm} >what< \\fn{>when<}",
                 " \\vspace{-0.25cm} ",
