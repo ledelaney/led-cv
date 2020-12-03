@@ -47,7 +47,7 @@ teachinghons:
   - {year: 2018, what: "Recipient of the Biological Sciences Department Graduate Teaching Award for BIOS 430"}
 
 otherhons:
-  - {year: 2020, what: "Participant in the \\href{https://chircollab.github.io/}{2020 Chicago `R` Collaborative Conference}"}
+  - {year: 2020, what: "Participant in the \\href{https://chircollab.github.io/}{2020 Chicago R Collaborative Conference}"}
   - {year: 2018, what: "Recipient of the Biological Sciences Department Travel Award"}
   - {year: 2018, what: "Reviewer for International Journal of Botany, Oxford Bibliographies"}
   - {year: 2017, what: "Accepted to NSF-funded workshop on Bayesian analysis of macroevolutionary mixtures"}
