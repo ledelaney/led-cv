@@ -3,8 +3,8 @@ output:
   pdf_document:
     latex_engine: xelatex
     template: input/template.tex
-    keep_tex: true
-date: November 30, 2020
+    keep_tex: false
+date: December 4, 2020
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
@@ -13,7 +13,7 @@ website: "ledelaney.github.io/"
 googlescholar: 
 orcid: 
 programming: "R"
-languages: "_LaTeX_, HTML & CSS, R Markdown"
+languages: "_LaTeX_, HTML & CSS,\\linebreak R Markdown"
 software: "Adobe Illustrator, Microsoft Office Suite"
 github: "ledelaney"
 twitter: 
