@@ -52,7 +52,7 @@ otherhons:
   - {year: 2018, what: "Reviewer for International Journal of Botany, Oxford Bibliographies"}
   - {year: 2017, what: "Accepted to NSF-funded workshop on Bayesian analysis of macroevolutionary mixtures"}
   - {year: 2017, what: "Recipient of the Biological Sciences Department Travel Award"}
-  - {year: 2017, what: "Accepted to \\href{https://www.arboretum.harvard.edu/tracing-evolution-form-function/}{microMORPH Plant Anatomy Summer Course} at Harvard University"}
+  - {year: 2017, what: "Accepted to \\href{https://web.archive.org/web/20170922060558/http://arboretum.harvard.edu/tracing-evolution-form-function/}{microMORPH Plant Anatomy Summer Course} at Harvard University"}
   - {year: 2016, what: "General horticulture volunteer at Garfield Park Conservatory"}
   
 bibliography: input/mypapers.bib
