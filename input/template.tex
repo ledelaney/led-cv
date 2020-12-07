@@ -107,7 +107,8 @@ $endfor$
 \newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
 \color{gray}
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setmainfont[Mapping=tex-text]{Helvetica Neue Light}
+%Color=textcolor took this out of setmainfont options
 
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
@@ -161,9 +162,14 @@ $endfor$
   \let\section\oldsection
 }
 
-\usepackage[colorlinks=false, 
-urlbordercolor=violet,
-pdfborderstyle={/S/U/W 1}]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=violet,
+    filecolor=black,      
+    urlcolor=violet,
+    citecolor = black
+}
 
 \usepackage{tikz}
 
@@ -197,7 +203,7 @@ pdfborderstyle={/S/U/W 1}]{hyperref}
 \pagestyle{fancy}
 \fancyhf{} % sets both header and footer to nothing
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[R]{\tiny{$date$ | page \thepage\ of 2}\\\tiny{Created with LaTeX and R Studio, \href{https://github.com/ledelaney/rmd-cv}{on the shoulders of giants}.}}
+\fancyfoot[R]{\tiny{$date$ | page \thepage\ of 2}\\\tiny{Created with LaTeX and R Studio, \href{https://github.com/ledelaney/rmd-cv}{\textcolor{violet}{on the shoulders of giants}}.}}
 
 %for itemize spacing
 \usepackage{enumitem}
