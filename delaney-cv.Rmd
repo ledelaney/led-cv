@@ -4,7 +4,7 @@ output:
     latex_engine: xelatex
     template: input/template.tex
     keep_tex: false
-date: December 4, 2020
+date: January 4, 2021
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
@@ -18,7 +18,7 @@ software: "Adobe Illustrator, Microsoft Office Suite"
 github: "ledelaney"
 twitter: 
 licenses: "Illinois Substitute Teaching, FCC Technician Class Radio" 
-interests: "Conceptual understanding of evolutionary principles, `R` for undergraduate education, macroevolution, the evolution of plant breeding systems, data manipulation & visualization with `tidyverse`"
+interests: "Conceptual understanding of evolutionary principles, evolution-centered teaching, `R` for \\linebreak undergraduate education, macroevolution, the evolution of plant breeding systems, data manipulation & visualization with `tidyverse`"
 edu:
   - {degree: PhD candidate, where: University of Illinois at Chicago, description_1: "in Ecology & Evolutionary Biology", description_2: "Dissertation: _The Nature of Adaptation and the Epistemology of Natural Selection_"}
   - {degree: MA, where: "Hunter College (CUNY)", description_1: "in Molecular & Cellular Biology, 2016"}
@@ -50,7 +50,7 @@ otherhons:
   - {year: 2020, what: "Participant in the \\href{https://chircollab.github.io/}{2020 Chicago R Collaborative Conference}"}
   - {year: 2018, what: "Recipient of the Biological Sciences Department Travel Award"}
   - {year: 2018, what: "Reviewer for International Journal of Botany, Oxford Bibliographies"}
-  - {year: 2017, what: "Accepted to NSF-funded workshop on Bayesian analysis of macroevolutionary mixtures"}
+  - {year: 2017, what: "Accepted to NSF-funded workshop on \\href{http://bamm-project.org/index.html}{Bayesian analysis of macroevolutionary mixtures}"}
   - {year: 2017, what: "Recipient of the Biological Sciences Department Travel Award"}
   - {year: 2017, what: "Accepted to \\href{https://web.archive.org/web/20170922060558/http://arboretum.harvard.edu/tracing-evolution-form-function/}{microMORPH Plant Anatomy Summer Course} at Harvard University"}
   - {year: 2016, what: "General horticulture volunteer at Garfield Park Conservatory"}
