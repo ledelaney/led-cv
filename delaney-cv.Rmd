@@ -42,7 +42,7 @@ work:
   # - {year: 2008-2011, where: "at Working Families Party", what: "Field Manager & Administrative Assistant", description: "Responsible for payroll, managing employees' healthcare coverage, bank deposits, and data entry. Organized informational events for the public, and served as Field Manager for multiple election and fundraising campaigns."}
 
 teachinghons:
-  - {year: 2020, what: "Nominated for the Graduate Student Excellence in Teaching and Mentoring Award"}
+  - {year: 2020, what: "Nominated for the UIC Graduate Student Excellence in Teaching and Mentoring Award"}
   - {year: 2020, what: "Recipient of the Biological Sciences Department Graduate Teaching Award for BIOS 220"}
   - {year: 2018, what: "Recipient of the Biological Sciences Department Graduate Teaching Award for BIOS 430"}
 
