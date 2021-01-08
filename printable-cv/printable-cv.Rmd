@@ -2,38 +2,40 @@
 output:
   pdf_document:
     latex_engine: xelatex
-    template: input/template.tex
-    keep_tex: false
-date: January 4, 2021
+    template: input/printable-cv.tex
+    keep_tex: true
+date: January 8, 2021
+documentclass: "resume"
+geometry_options: "margin=1in"
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
 address: "Chicago, IL 60622"
-website: "ledelaney.github.io/"
+website: "\\url{ledelaney.github.io/}"
 googlescholar: 
 orcid: 
 programming: "R"
 languages: "_LaTeX_, HTML & CSS,\\linebreak R Markdown"
 software: "Adobe Illustrator, Microsoft Office Suite"
 github: "ledelaney"
-twitter: 
+twitter: "\\@\\href{https://twitter.com/emergentlyLucy}{emergentlyLucy}"
 licenses: "Illinois Substitute Teaching, FCC Technician Class Radio" 
-interests: "Conceptual understanding of evolutionary principles, evolution-centered teaching, `R` for \\linebreak undergraduate education, macroevolution, the evolution of plant breeding systems, data manipulation & visualization with `tidyverse`"
+interests: "Conceptual understanding of evolutionary principles, evolution-centered teaching, `R` for \\linebreak undergraduate education, macroevolution, the evolution of plant breeding systems, data \\linebreak manipulation & visualization with `tidyverse`"
 edu:
-  - {degree: PhD candidate, where: University of Illinois at Chicago, description_1: "in Ecology & Evolutionary Biology", description_2: "Dissertation: _The Nature of Adaptation and the Epistemology of Natural Selection_"}
-  - {degree: MA, where: "Hunter College (CUNY)", description_1: "in Molecular & Cellular Biology, 2016"}
-  - {degree: BS, where: "John Jay College (CUNY)", description_1: "in Forensic Molecular Biology, Philosophy, 2012"}
+  - {degree: Ph.D candidate, where: University of Illinois at Chicago, city: "Chicago, IL", description_1: "Ecology & Evolutionary Biology", description_2: "Dissertation: _The Nature of Adaptation and the Epistemology of Natural Selection_", year: 2022}
+  - {degree: M.A., where: "Hunter College (CUNY)", city: "New York, NY", description_1: "Molecular & Cellular Biology", year: 2016}
+  - {degree: B.S., where: "John Jay College (CUNY)", city: "New York, NY", description_1: "Forensic Molecular Biology, Philosophy", year: 2012}
   
 uniclass:
-  - {year: "Fall 2019 - Summer 2020", what: "BIOS 220", description_1: "Mendelian and Molecular Genetics", description_2: "Sophomore-level course focusing on Mendelian inheritance patterns and molecular \\linebreak mechanisms of inheritance. Helped managed transition from in-person to online delivery. \\linebreak Responsible for teaching discussion section, creating digital course materials & exams, grading, and Blackboard administration."}
+  - {year: "Fall 2019 - Summer 2020", what: "BIOS 220", description_1: "Mendelian and Molecular Genetics", description_2: "Sophomore-level course focusing on Mendelian inheritance patterns and molecular mechanisms of inheritance. Helped managed transition from in-person to online delivery. Responsible for teaching discussion section, creating digital course materials & exams, grading, and Blackboard administration."}
   - {year: "Summer 2019", what: "BIOS 331", description_1: "General Ecology Laboratory", description_2: "Application of ecological and evolutionary concepts with hands-on experiments and field trips to local natural areas. Responsible for weekly laboratory instruction, office hours, and grading."}
   - {year: "Spring 2019", what: "BIOS 230", description_1: "Ecology and Evolution", description_2: "Sophomore-level course with emphasis on basic ecological systems, ecosystem dynamics, and evolutionary principles. Responsible for weekly office hours, assignment creation, and grading."}
-  - {year: "Fall 2017 - Fall 2018", what: "BIOS 430", description_1: "Evolution", description_2: "Upper-division, programming-focused course on evolutionary theory and principles. Responsible for weekly office hours & debugging, quiz materials, and grading of `R` \\linebreak programming assignments."}
+  - {year: "Fall 2017 - Fall 2018", what: "BIOS 430", description_1: "Evolution", description_2: "Upper-division, programming-focused course on evolutionary theory and principles. Responsible for weekly office hours & debugging, quiz materials, and grading of `R` programming \\linebreak assignments."}
   - {year: 2016-2017, what: "BIOS 120", description_1: "Biology of Populations and Communities", description_2: "Introductory biology laboratory course with emphasis on ecological and evolutionary principles. Responsible for weekly laboratory instruction, office hours, and grading."}
   
 commclass:
   - {year: "2020-Present", what: "UIC Biological Sciences Department", description_1: "Course Builder & Trainer", description_2: "Trained in online instructional design & pedagogy, and software relevant to online teaching & learning. Assisting Biological Sciences Department faculty members in transitioning their courses online, and managing technical aspects of courses throughout online delivery."}
-  - {year: 2018-2020, what: "Nurturing Wisdom Tutoring", description_1: "Tutor", description_2: "Highly-rated individual tutoring for grades 7-12 in test preparation (SAT and high school \\linebreak entrance exams), science, mathematics, and writing."}
+  - {year: 2018-2020, what: "Nurturing Wisdom Tutoring", description_1: "Tutor", description_2: "Highly-rated individual tutoring for grades 7-12 in test preparation (SAT and high school entrance exams), science, mathematics, and writing."}
   - {year: 2015-2016, what: "Chicago-area Charter Schools", description_1: "Substitute Teacher", description_2: "Substitute teacher for elementary, middle, and high school classes."}
 
 work:
@@ -66,9 +68,8 @@ setwd("/Users/lucydelaney/rmd-cv/")
 
 ```
 
-\vspace{0.3cm}
-# Presentations
-\vspace{-0.55cm}
+# PRESENTATIONS
+\hrule
 
 ```{r, eval = T, echo = FALSE, message = FALSE, warning = FALSE}
 presentations <- read_csv(file = "/Users/lucydelaney/rmd-cv/input/presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
@@ -80,7 +81,11 @@ presentations <- read_csv(file = "/Users/lucydelaney/rmd-cv/input/presentations.
 not.invited <- presentations %>%
   dplyr::filter(invited == 0) %>%
   arrange(-when)
-glue::glue_data(not.invited, "**>event<** >where< \\hspace{1mm}|\\hspace{1mm} >what< \\fn{>when<}",
+# glue::glue_data(not.invited, "**>event<** >where< \\hspace{1mm}|\\hspace{1mm} >what< \\hfill >when<",
+#                 " \\vspace{-0.45cm} ",
+#                 "\\begin{quote}>gsub('\\\\*', '', who)<, \\href{>link<}{>title<.}\\end{quote}",
+#                 .open = ">", .close = "<")
+glue::glue_data(not.invited, "**>when<** >event< \\hspace{1mm}|\\hspace{1mm} >what<",
                 " \\vspace{-0.25cm} ",
                 "\\begin{quote}>gsub('\\\\*', '', who)<, \\href{>link<}{>title<.}\\end{quote}",
                 .open = ">", .close = "<")
@@ -88,7 +93,7 @@ glue::glue_data(not.invited, "**>event<** >where< \\hspace{1mm}|\\hspace{1mm} >w
 #{\">title<.\"}
 ```
 
-\vspace{0.3cm}
-\section{Publications}
-\vspace{-0.55cm}
+# PUBLICATIONS
+\hrule
+
 
