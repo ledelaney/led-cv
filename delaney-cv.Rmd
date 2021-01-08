@@ -4,7 +4,7 @@ output:
     latex_engine: xelatex
     template: input/template.tex
     keep_tex: false
-date: January 4, 2021
+date: January 8, 2021
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
