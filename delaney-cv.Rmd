@@ -9,7 +9,7 @@ first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
 address: "Chicago, IL 60622"
-website: "ledelaney.github.io/"
+website: "ledelaney.org"
 googlescholar: 
 orcid: 
 programming: "R"

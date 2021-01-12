@@ -11,7 +11,7 @@ first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
 address: "Chicago, IL 60622"
-website: "\\url{ledelaney.github.io/}"
+website: "\\url{ledelaney.org}"
 googlescholar: 
 orcid: 
 programming: "R"
@@ -95,5 +95,6 @@ glue::glue_data(not.invited, "**>when<** >event< \\hspace{1mm}|\\hspace{1mm} >wh
 
 # PUBLICATIONS
 \hrule
+\setlength{\leftmargin}{1.8em}
 
 
