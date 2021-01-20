@@ -3,18 +3,18 @@ output:
   pdf_document:
     latex_engine: xelatex
     template: input/printable-cv.tex
-    keep_tex: true
-date: January 8, 2021
+    keep_tex: false
+date: January 20, 2021
 documentclass: "resume"
 geometry_options: "margin=1in"
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
-address: "Chicago, IL 60622"
+address: "Chicago, IL 60607"
 website: "\\url{ledelaney.org}"
 googlescholar: 
 orcid: 
-programming: "R"
+programming: "R (proficient); php (novice)"
 languages: "_LaTeX_, HTML & CSS,\\linebreak R Markdown"
 software: "Adobe Illustrator, Microsoft Office Suite"
 github: "ledelaney"
@@ -23,14 +23,14 @@ licenses: "Illinois Substitute Teaching, FCC Technician Class Radio"
 interests: "Conceptual understanding of evolutionary principles, evolution-centered teaching, `R` for \\linebreak undergraduate education, macroevolution, the evolution of plant breeding systems, data \\linebreak manipulation & visualization with `tidyverse`"
 edu:
   - {degree: Ph.D candidate, where: University of Illinois at Chicago, city: "Chicago, IL", description_1: "Ecology & Evolutionary Biology", description_2: "Dissertation: _The Nature of Adaptation and the Epistemology of Natural Selection_", year: 2022}
-  - {degree: M.A., where: "Hunter College (CUNY)", city: "New York, NY", description_1: "Molecular & Cellular Biology", year: 2016}
-  - {degree: B.S., where: "John Jay College (CUNY)", city: "New York, NY", description_1: "Forensic Molecular Biology, Philosophy", year: 2012}
+  - {degree: M.A., where: "Hunter College of the City University of New York", city: "New York, NY", description_1: "Molecular & Cellular Biology", year: January 2016}
+  - {degree: B.S., where: "John Jay College of the City University of New York", city: "New York, NY", description_1: "Forensic Molecular Biology, Philosophy", year: May 2012}
   
 uniclass:
   - {year: "Fall 2019 - Summer 2020", what: "BIOS 220", description_1: "Mendelian and Molecular Genetics", description_2: "Sophomore-level course focusing on Mendelian inheritance patterns and molecular mechanisms of inheritance. Helped managed transition from in-person to online delivery. Responsible for teaching discussion section, creating digital course materials & exams, grading, and Blackboard administration."}
   - {year: "Summer 2019", what: "BIOS 331", description_1: "General Ecology Laboratory", description_2: "Application of ecological and evolutionary concepts with hands-on experiments and field trips to local natural areas. Responsible for weekly laboratory instruction, office hours, and grading."}
   - {year: "Spring 2019", what: "BIOS 230", description_1: "Ecology and Evolution", description_2: "Sophomore-level course with emphasis on basic ecological systems, ecosystem dynamics, and evolutionary principles. Responsible for weekly office hours, assignment creation, and grading."}
-  - {year: "Fall 2017 - Fall 2018", what: "BIOS 430", description_1: "Evolution", description_2: "Upper-division, programming-focused course on evolutionary theory and principles. Responsible for weekly office hours & debugging, quiz materials, and grading of `R` programming \\linebreak assignments."}
+  - {year: "Fall 2017 - Fall 2018", what: "BIOS 430", description_1: "Evolution", description_2: "Upper-division, programming-focused course on evolutionary theory and principles. \\linebreak Responsible for weekly office hours & debugging, quiz materials, and grading of `R` programming \\linebreak assignments."}
   - {year: 2016-2017, what: "BIOS 120", description_1: "Biology of Populations and Communities", description_2: "Introductory biology laboratory course with emphasis on ecological and evolutionary principles. Responsible for weekly laboratory instruction, office hours, and grading."}
   
 commclass:
@@ -41,7 +41,7 @@ commclass:
 work:
   - {year: 2012-2015, where: "at NYC Office of Chief Medical Examiner", what: "Forensic Molecular Biologist", description: "Examined evidence for the presence of biological fluids, performed serological & DNA analysis techniques, analyzed data & performed statistical analyses, wrote reports, and provided expert scientific testimony in court."}
   - {year: 2011-2012, where: "at NYC Department of Health", what: "Health Research Intern", description: "Accepted to the Health Research Training Program for a year-long internship with the Bureau of Environmental Disease Prevention. Received training in disease epidemiology, emergency preparedness & response, public health and outreach programs in environmental disease control & prevention, and emerging viral infections."}
-  # - {year: 2008-2011, where: "at Working Families Party", what: "Field Manager & Administrative Assistant", description: "Responsible for payroll, managing employees' healthcare coverage, bank deposits, and data entry. Organized informational events for the public, and served as Field Manager for multiple election and fundraising campaigns."}
+  - {year: 2008-2011, where: "at Working Families Party", what: "Field Manager & Administrative Assistant", description: "Responsible for payroll, managing employees' healthcare coverage, bank deposits, and data entry. Organized informational events for the public, and served as Field Manager for multiple election and fundraising campaigns."}
 
 teachinghons:
   - {year: 2020, what: "Nominated for the UIC Graduate Student Excellence in Teaching and Mentoring Award"}
@@ -70,6 +70,7 @@ setwd("/Users/lucydelaney/rmd-cv/")
 
 # PRESENTATIONS
 \hrule
+\leftskip 1.8em
 
 ```{r, eval = T, echo = FALSE, message = FALSE, warning = FALSE}
 presentations <- read_csv(file = "/Users/lucydelaney/rmd-cv/input/presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
@@ -95,6 +96,6 @@ glue::glue_data(not.invited, "**>when<** >event< \\hspace{1mm}|\\hspace{1mm} >wh
 
 # PUBLICATIONS
 \hrule
-\setlength{\leftmargin}{1.8em}
+\leftskip 1.8em
 
 
