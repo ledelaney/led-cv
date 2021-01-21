@@ -14,7 +14,8 @@ address: "Chicago, IL 60607"
 website: "\\url{ledelaney.org}"
 googlescholar: 
 orcid: 
-programming: "R (proficient); php (novice)"
+programming: "R (proficient)"
+scripting: "php, bash, zsh (novice)"
 languages: "_LaTeX_, HTML & CSS,\\linebreak R Markdown"
 software: "Adobe Illustrator, Microsoft Office Suite"
 github: "ledelaney"
