@@ -4,7 +4,7 @@ output:
     latex_engine: xelatex
     template: input/template.tex
     keep_tex: false
-date: January 8, 2021
+date: January 26, 2021
 first: "Lucy E"
 last: "Delaney"
 email: "ldelan5@uic.edu"
@@ -12,7 +12,7 @@ address: "Chicago, IL 60622"
 website: "ledelaney.org"
 googlescholar: 
 orcid: 
-programming: "R"
+programming: "R (proficient) \\linebreak php, bash, zsh (novice)"
 languages: "_LaTeX_, HTML & CSS,\\linebreak R Markdown"
 software: "Adobe Illustrator, Microsoft Office Suite"
 github: "ledelaney"
@@ -39,7 +39,7 @@ commclass:
 work:
   - {year: 2012-2015, where: "at NYC Office of Chief Medical Examiner", what: "Forensic Molecular Biologist", description: "Examined evidence for the presence of biological fluids, performed serological & DNA analysis techniques, analyzed data & performed statistical analyses, wrote reports, and provided expert scientific testimony in court."}
   - {year: 2011-2012, where: "at NYC Department of Health", what: "Health Research Intern", description: "Accepted to the Health Research Training Program for a year-long internship with the Bureau of Environmental Disease Prevention. Received training in disease epidemiology, emergency preparedness & response, public health and outreach programs in environmental disease control & prevention, and emerging viral infections."}
-  # - {year: 2008-2011, where: "at Working Families Party", what: "Field Manager & Administrative Assistant", description: "Responsible for payroll, managing employees' healthcare coverage, bank deposits, and data entry. Organized informational events for the public, and served as Field Manager for multiple election and fundraising campaigns."}
+  - {year: 2008-2011, where: "at Working Families Party", what: "Field Manager & Administrative Assistant", description: "Responsible for payroll, managing employees' healthcare coverage, bank deposits, and data entry. Organized informational events for the public, and served as Field Manager for multiple election and fundraising campaigns."}
 
 teachinghons:
   - {year: 2020, what: "Nominated for the UIC Graduate Student Excellence in Teaching and Mentoring Award"}
