@@ -142,6 +142,32 @@ $endfor$
 %----------------------------------------------------------------------------------------
 %	PRESENTATIONS and PUBLICATIONS
 %----------------------------------------------------------------------------------------
+
+\begin{rSection}{Past and Upcoming Presentations}
+\textbf{Flowering Plant Breeding Systems}
+
+$for(bspresent)$
+\textbf{$bspresent.year$} $bspresent.event$ | $bspresent.what$\\
+$bspresent.who$, $bspresent.title$\\
+
+$if(bspresent.link)$
+$bspresent.link$\\
+$endif$
+$endfor$
+
+\textbf{The Four Causes of Adaptation}
+
+$for(fourcausepresent)$
+\textbf{$fourcausepresent.year$} $fourcausepresent.event$ | $fourcausepresent.what$ 
+$if(fourcausepresent.link)$
+$fourcausepresent.link$
+$endif$
+\linebreak
+$endfor$
+
+\end{rSection}
+
+
 $body$
 
 %----------------------------------------------------------------------------------------

@@ -57,6 +57,16 @@ otherhons:
   - {year: 2017, what: "Recipient of the Biological Sciences Department Travel Award"}
   - {year: 2017, what: "Accepted to \\href{https://web.archive.org/web/20170922060558/http://arboretum.harvard.edu/tracing-evolution-form-function/}{microMORPH Plant Anatomy Summer Course} at Harvard University"}
   - {year: 2016, what: "General horticulture volunteer at Garfield Park Conservatory"}
+
+bspresent:
+  - {year: 2017, event: "test", who: "test", title: "test", link: "test"}
+
+fourcausepresent:
+  - {year: 2021, event: "Society for the Advancement of Biology Education Research West", where: "Online", what: "Talk", who: "Delaney, Lucy E", title: "The Four Causes of Adaptation", link: "\\href{https://ledelaney.org/talks/sabertalk/SABER-slides.html}{View Slides}"}
+  - {year: "2021, \\textit{forthcoming}", event: "Midwest Ecology and Evolution Conference", what: "Talk", who: "Delaney, Lucy E"}
+  - {year: "2021, \\textit{forthcoming}", event: "Undergraduate Biology Education Research GRS", where: "Bates College, ME", what: "Poster", who: "Delaney, Lucy E"}
+  - {year: "2021, \\textit{forthcoming}", event: "Society for the Advancement of Biology Education Research", what: "Talk", who: "Delaney, Lucy E"}
+  - {year: "2021, \\textit{forthcoming}", event: "Evolution", what: "Talk", who: "Delaney, Lucy E"}
   
 bibliography: input/mypapers.bib
 csl: input/apa.csl
@@ -67,32 +77,6 @@ nocite: '@*'
 library("tidyverse")
 setwd("/Users/lucydelaney/rmd-cv/")
 
-```
-
-# PRESENTATIONS
-\hrule
-\leftskip 1.8em
-
-```{r, eval = T, echo = FALSE, message = FALSE, warning = FALSE}
-presentations <- read_csv(file = "/Users/lucydelaney/rmd-cv/input/presentations.csv", col_names = T, na = c(NA, "", " "), trim_ws = T, skip_empty_rows = T) %>%
-  arrange(invited, desc(when))
-
-```
-
-```{r, eval = T, results = "asis", message = FALSE, warning = FALSE, echo = FALSE}
-not.invited <- presentations %>%
-  dplyr::filter(invited == 0) %>%
-  arrange(-when)
-# glue::glue_data(not.invited, "**>event<** >where< \\hspace{1mm}|\\hspace{1mm} >what< \\hfill >when<",
-#                 " \\vspace{-0.45cm} ",
-#                 "\\begin{quote}>gsub('\\\\*', '', who)<, \\href{>link<}{>title<.}\\end{quote}",
-#                 .open = ">", .close = "<")
-glue::glue_data(not.invited, "**>when<** >event< \\hspace{1mm}|\\hspace{1mm} >what<",
-                " \\vspace{-0.25cm} ",
-                "\\begin{quote}>gsub('\\\\*', '', who)<, \\href{>link<}{>title<.}\\end{quote}",
-                .open = ">", .close = "<")
-
-#{\">title<.\"}
 ```
 
 # PUBLICATIONS
