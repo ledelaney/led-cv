@@ -10,11 +10,11 @@
 
 body {
   font-family: 'Charter-Racket', serif;
-  font-size: 0.9375rem;
+  font-size: 0.9575rem;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 1rem;
-  color: #373a3c;
+  color: #404040;
   text-align: left;
   background-color: #fff;
 }
@@ -35,8 +35,8 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #625f5f
-  margin-top: 0;
+  color: #000000;
+  margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
 
@@ -56,7 +56,103 @@ ul,
 dl {
   margin-top: 3;
   margin-bottom: 1rem;
+  list-style-position: inside;
 }
+
+ul li:before {    
+    font-family: 'FontAwesome';
+    content: '\f06c';
+    margin:0 5px 0 10px;
+    color:  #666666;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+}
+
+b {
+  color: #000000;
+}
+
+
+.logo {
+  background-image: url("images/bios-logo-red.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 210px;
+  height: 228px;
+  z-index: 0;
+}
+
+@media (min-width: 546px) {
+  .logo {
+  width: 110px;
+  height: 128px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+  width: 110px;
+  height: 128px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+  width: 110px;
+  height: 128px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+  width: 210px;
+  height: 228px;
+  }
+}
+
+
+.topcontainer{
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+@media (min-width: 546px) {
+  .topcontainer {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .topcontainer {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .topcontainer {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .topcontainer {
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+}
+
 
 .mycontainer{
   margin-right: auto;
@@ -64,9 +160,11 @@ dl {
   position: relative;
 }
 
+
+
 @media (min-width: 546px) {
   .mycontainer {
-    max-width: 90%;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -74,7 +172,7 @@ dl {
 
 @media (min-width: 768px) {
   .mycontainer {
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -107,16 +205,18 @@ dl {
   text-align: center;
 }
 
-.flex-container {
-    display: flex;
+.column {
+  float: left;
+  width: 50%;
 }
 
-.flex-child {
-    flex: 1;
-}  
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-.flex-child:first-child {
-    margin-left: auto;
-    margin-right: auto;
-} 
-
+.indent {
+  text-indent: 50px;
+}
