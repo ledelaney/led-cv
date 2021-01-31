@@ -5,5 +5,5 @@
 
 ## LaTeX CV materials  
 
-+[Peony image](https://www.transparentpng.com/details/peony-icon_18508.html)
++ [Peony image](https://www.transparentpng.com/details/peony-icon_18508.html)
 
