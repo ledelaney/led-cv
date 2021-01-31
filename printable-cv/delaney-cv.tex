@@ -6,7 +6,13 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{amssymb}
+\usepackage{halloweenmath}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
 \usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.25}
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -16,15 +22,10 @@
     citecolor = black
 }
 
-\usepackage{halloweenmath}
-\usepackage{multicol}
-\usepackage{ragged2e}
-
 \usepackage{enumitem}
 \setitemize{itemsep=0pt, itemindent=10pt}
 
-
-% Need to include this for refs with Pandoc
+% Reference formatting
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
 \newenvironment{cslreferences}
@@ -32,6 +33,7 @@
 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}
 {\par}
 
+%title formatting
 \usepackage{titlesec}
 \titleformat{\section}[block]{\bfseries\sc}{}{1em}{}
 %\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
@@ -51,10 +53,35 @@
 \setlength\parindent{0pt}
 \setlength{\parskip}{0pt}
 
+% Widow and orphan prevention
 \widowpenalty10000
 \clubpenalty10000
 
+%Need all these for graphics and tables
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{wallpaper}
 \usepackage{lmodern}
+
+\usepackage[pages=some]{background}
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=0.35,
+placement=top,
+hshift=20,
+vshift=-20,
+%position={5cm,7cm},
+angle=0,
+contents={%
+  \includegraphics[width=0.25\textwidth]{images/peony.png}
+  }%
+}
+
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancypagestyle{firstpage}{%
@@ -72,16 +99,36 @@
 
 
 \begin{document}
-\pagestyle{firstpage}
+\BgThispage
+\pagestyle{alldocument}
 
-\begin{center}
-{\fontsize{26}{64}\selectfont Lucy E Delaney}\\
-\vspace{1mm}
-{\fontsize{15}{64}\selectfont Graduate Student in Biological Sciences}\\
-\vspace{1mm}
-{\fontsize{15}{64}\selectfont University of Illinois at Chicago}\\
-\end{center}
+%\begin{center}
+{\fontsize{20}{64}\selectfont \textsc{Lucy E Delaney}}\\
 
+% \vspace{1mm}
+% {\fontsize{15}{64}\selectfont \textsc{Graduate Student in Biological Sciences}}\\
+% \vspace{1mm}
+% {\fontsize{15}{64}\selectfont University of Illinois at Chicago}\\
+%\end{center}
+\leftskip 5em
+\begin{multicols}{2}
+
+University of Illinois at Chicago\\
+Department of Biological Sciences\\
+Chicago, IL 60607
+
+\columnbreak
+
+\begin{flushright}
+\rightskip 5em
+\href{mailto:ldelan5@uic.edu}{ldelan5@uic.edu} \textcolor{light-gray}{\faPaperPlane}\\
+\href{https://github.com/ledelaney}{@ledelaney} \textcolor{light-gray}{\faGithub}\\
+\href{https://ledelaney.org}{ledelaney.org} \textcolor{light-gray}{\faDesktop}
+\end{flushright}
+
+\end{multicols}
+
+\vspace{0.5mm}
 
 \section{Interests}
 \hrule
@@ -89,25 +136,24 @@
 
 \leftskip 1.8em
 
-Conceptual understanding of evolutionary principles, evolution-centered teaching, educational \& racial equity, \faRProject\ for undergraduate education, macroevolution, the evolution of plant breeding systems
+Conceptual understanding of evolutionary principles, evolution-centered teaching, educational \& racial equity, \textcolor{light-gray}{\faRProject}\ for undergraduate education, macroevolution, the evolution of plant breeding systems
 
 \section{Education}
 \hrule
 \vspace{4mm}
 \leftskip 1.8em
 
-\textbf{Ph.D candidate, Ecology \& Evolutionary Biology} \hfill Expected 2022\\ 
+\textbf{Ph.D candidate, Ecology \& Evolutionary Biology} \hfill \textit{Expected 2022}\\ 
 University of Illinois at Chicago \hfill Chicago, IL
      
 Dissertation: \emph{The Nature of Adaptation and the Epistemology of Natural Selection} 
 \vspace{0.3cm}
 
-\textbf{M.A., Molecular \& Cellular Biology} \hfill January 2016\\ 
+\textbf{M.A., Molecular \& Cellular Biology} \hfill 2016\\ 
 Hunter College of the City University of New York \hfill New York, NY\\
      
 
-\textbf{B.S., Forensic Molecular Biology, Philosophy} \hfill May
-2012\\ 
+\textbf{B.S., Forensic Molecular Biology, Philosophy} \hfill 2012\\ 
 John Jay College of the City University of New York \hfill New York, NY
 
 \section{Skills}
@@ -116,26 +162,26 @@ John Jay College of the City University of New York \hfill New York, NY
 
 \begin{multicols}{3}
 \begin{itemize}
-	\item[\faRProject]{\texttt{R} programming}
-	\item[\faBroadcastTower]{Technician Radio License}
+	\item[\textcolor{light-gray}{\faRProject}]{\texttt{R} programming language}
+	\item[\textcolor{light-gray}{\faBroadcastTower}]{Technician radio license}
 	\item[]{}
 \end{itemize}
 
 \columnbreak
 
 \begin{itemize}
-	\item[\faFilePdf]{\LaTeX\ and \DeclareRobustCommand{\BibTeX}{%
+	\item[\textcolor{light-gray}{\faFilePdf}]{\LaTeX\ and \DeclareRobustCommand{\BibTeX}{%
   {\normalfont B\kern-.05em{\scshape i\kern-.025em b}\kern-.08em \TeX}%
 }\BibTeX}
-	\item[\faFileCode]{\texttt{HTML} \& \texttt{CSS}}
-	\item[\faMarkdown]{Markdown}
+\item[\textcolor{light-gray}{\faFileCode}]{\texttt{HTML} and \texttt{CSS}}
+\item[\textcolor{light-gray}{\faHighlighter}]{\texttt{Markdown}}
 \end{itemize}
 
 \columnbreak
 
 \begin{itemize}
-	\item[\faPencilRuler]{Adobe Illustrator}
-	\item[\faMicrosoft]{Microsoft Office Suite}
+	\item[\textcolor{light-gray}{\faDraftingCompass}]{Adobe Illustrator}
+	\item[\textcolor{light-gray}{\faMicrosoft}]{Microsoft Office Suite}
 	\item[]{}
 \end{itemize}
 
@@ -161,7 +207,7 @@ Sophomore-level course with emphasis on basic ecological systems, ecosystem dyna
      
 \textbf{BIOS 430} Evolution \hfill Fall 2017--Fall 2018
      
-Upper-division, programming-focused course on evolutionary theory and principles. Responsible for weekly drop-in hours \& debugging, quiz materials, and grading of \faRProject\ programming assignments.\\
+Upper-division, programming-focused course on evolutionary theory and principles. Responsible for weekly drop-in hours \& debugging, quiz materials, and grading of \textcolor{light-gray}{\faRProject}\ programming assignments.\\
 
 \textbf{BIOS 120} Biology of Populations and Communities \hfill 2016--2017
      
@@ -194,7 +240,7 @@ Substitute teacher for elementary, middle, and high school classes.
 
 \begin{itemize}[label=$\mathwitch*$]
 \item{\textbf{2020} Nominated for the UIC Graduate Student Excellence in Teaching and Mentoring Award}
-\item{\textbf{2020} Recipient of the Biological Sciences Department GraduateTeaching Award for BIOS 220}
+\item{\textbf{2020} Recipient of the Biological Sciences Department Graduate Teaching Award for BIOS 220}
 \item{\textbf{2018} Recipient of the Biological Sciences Department Graduate Teaching Award for BIOS 430}
 \end{itemize}
 
@@ -207,30 +253,30 @@ Substitute teacher for elementary, middle, and high school classes.
 
 \textbf{July 2018} Annual Meeting of the Botanical Society of America $\vert$ Poster
 
-Delaney, Lucy E, Ramanauskas, K., \& Igić, B., Breeding Systems in the Legumes. \href{https://ledelaney.org/static/posters/poster.png}{\faDesktop}
+Delaney, Lucy E, Ramanauskas, K., \& Igić, B. \textit{Breeding Systems in the Legumes}. \href{https://ledelaney.org/static/posters/poster.png}{\faFileImage}
 
-\textit{Rochester, MN}\\
+Rochester, MN\\
 
 \textbf{August 2017} microMORPH Summer Course $\vert$ Talk
 
-Delaney, Lucy E, Evolutionary Consequences of Plant Mating Systems. \href{https://www.dropbox.com/s/o7hcg5riw97wf9i/08-2017-microMORPH.pdf?dl=1}{\faDesktop}
+Delaney, Lucy E. \textit{Evolutionary Consequences of Plant Mating Systems}. \href{https://www.dropbox.com/s/o7hcg5riw97wf9i/08-2017-microMORPH.pdf?dl=1}{\faImages}
 
-\textit{Arnold Arboretum, Harvard}
+Arnold Arboretum, Harvard
 
 \subsection{\textit{Evolution Education Research}}
 \vspace{2mm}
 
 \textbf{March 2021 (\textit{upcoming})} Midwest Ecology and Evolution Conference $\vert$ Talk
 
-Delaney, Lucy E, The Four Causes of Adaptation.
+Delaney, Lucy E. \textit{The Four Causes of Adaptation}.
 
-\textit{Online}\\
+Online\\
 
 \textbf{January 2021} Society for the Advancement of Biology Education Research West $\vert$ Talk
 
-Delaney, Lucy E, The Four Causes of Adaptation. \href{https://ledelaney.org/talks/sabertalk/SABER-slides.html}{\faDesktop} \href{https://github.com/ledelaney/01-21-SABERwest}{\faGithub}
+Delaney, Lucy E. \textit{The Four Causes of Adaptation}. \href{https://ledelaney.org/talks/sabertalk/SABER-slides.html}{\faImages} \href{https://github.com/ledelaney/01-21-SABERwest}{\faGithub}
 
-\textit{Online}
+Online
 
 \section{Publications}
 \hrule
@@ -245,9 +291,9 @@ Delaney, Lucy E, The Four Causes of Adaptation. \href{https://ledelaney.org/talk
 \vspace{2mm}
 
 \begin{cslreferences}
-\textbf{Delaney, Lucy E}, Ramanauskas, K., \& Igić, B. (2021a). Breeding systems in the legumes: What do we know?
+\textbf{Delaney, Lucy E}, Ramanauskas, K., \& Igić, B. Breeding systems in the legumes: What do we know?
 
-\textbf{Delaney, Lucy E}, Ramanauskas, K., \& Igić, B. (2021b). Breeding systems in the orchids.\\
+\textbf{Delaney, Lucy E}, Ramanauskas, K., \& Igić, B. Breeding systems in the orchids.\\
 \end{cslreferences}
 
 \section{Other Awards and Training}
@@ -256,7 +302,7 @@ Delaney, Lucy E, The Four Causes of Adaptation. \href{https://ledelaney.org/talk
 \leftskip 1.8em
 
 \begin{itemize}[label=$\mathwitch*$]
-\item{\textbf{2020} Participant in the 2020 Chicago R Collaborative Conference \href{https://chircollab.github.io/}{\faLink}}
+\item{\textbf{2020} Participant in the 2020 Chicago \textcolor{light-gray}{\faRProject}\ Collaborative Conference \href{https://chircollab.github.io/}{\faLink}}
 \item{\textbf{2018} Recipient of the Biological Sciences Department Travel Award}
 \item{\textbf{2018} Reviewer for International Journal of Botany, Oxford Bibliographies}
 \item{\textbf{2017} Accepted to NSF-funded workshop on Bayesian Analysis of Macroevolutionary Mixtures \href{http://bamm-project.org/index.html}{\faLink}}
