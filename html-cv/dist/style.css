@@ -71,15 +71,33 @@ dl {
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
   list-style-position: inside;
+  list-style: none;
+  line-height: 1.5rem;
 }
 
-ul li:before {    
+.fa-ul {
+
+  margin-top: 0.6rem;
+  margin-bottom: 0.9rem;
+  list-style-position: inside;
+  list-style: none;
+  line-height: 1.5rem;
+}
+
+/* ul li:before {    
     font-family: 'FontAwesome';
     content: '\f06c';
     margin:0 5px 0 10px;
     color:  #666666;
     font-size: 0.7rem;
     line-height: 1.5rem;
+} */
+
+.fa-li {
+  margin: 0 3px 3px 3px;
+  color:  #666666;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
 }
 
 b {
