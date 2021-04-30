@@ -15,65 +15,37 @@ body {
     font-size: 0.975rem;
 }
 
-
+@media (min-width: 300px){
 .pagecontainer {
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    font-size: inherit;
+    font-size: 80%;
+    max-width: 95%;
+    }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 400px){
     .pagecontainer {
-      max-width: 550px;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 0.75rem;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        font-size: 90%;
+        max-width: 80%;
+        }
+
     }
 
-    .widejustify {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 0.5rem;
-    }
-
-    .fa-li {
-        line-height: 1rem;
-
-  }
-  
-  @media (min-width: 992px) {
+@media (min-width: 800px){
     .pagecontainer {
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 0.75rem;
-    }
-
-    .widejustify {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 0.5rem;
-    }
-
-    .fa-li {
-        line-height: 1rem;
-
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    font-size: inherit;
+    max-width: 60%;
   }
+}
 
-  }
-  
-  @media (min-width: 1200px) {
-    .pagecontainer {
-      max-width: 810px;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      font-size: inherit;
-    }
-  }
 
 h1 {
     margin-bottom: -0.2rem;
@@ -109,6 +81,9 @@ b {
     color: black;
 }
 
+.rightjustify{
+    text-align: right;
+}
 
 .italic {
     font-style: italic;
@@ -132,14 +107,6 @@ a:visited{
 
 .contact {
     font-family: "Charter-Racket";
-}
-
-
-.widejustify {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: -1.8rem;
 }
 
 
