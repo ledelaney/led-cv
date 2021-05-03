@@ -42,7 +42,7 @@ body {
     margin-left: auto;
     position: relative;
     font-size: inherit;
-    max-width: 60%;
+    max-width: 51%;
   }
 }
 
@@ -110,19 +110,12 @@ a:visited{
 }
 
 
-.fa-ul {
+ul {
     list-style: none;
-    list-style-position: inside;
-    margin-top: 1.5rem;
+    list-style-position: outside;
     line-height: 1.35;
+    margin-top: 1.5rem;
 }
-
-.fa-li {
-    color:  #666666;
-    font-size: 0.7rem;
-    line-height: 1.5rem;
-  }
-
 
 
 .pubs p {
