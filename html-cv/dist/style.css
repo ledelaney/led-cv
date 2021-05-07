@@ -1,5 +1,66 @@
 @import url("manual-fonts.css");
 
+
+@media (min-width: 300px){
+    .pagecontainer {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    font-size: 90%;
+    max-width: 95%;
+    }
+
+    ul {
+        list-style: circle;
+    }
+
+    h1, h2 {
+        font-size: large;
+    }
+
+
+}
+
+
+@media (min-width: 400px){
+    .pagecontainer {
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        font-size: 90%;
+        max-width: 80%;
+        }
+
+    ul {
+        list-style: circle;
+    }
+
+    h1, h2 {
+        font-size: x-large;
+    }
+
+
+    }
+
+@media (min-width: 800px){
+    .pagecontainer {
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        font-size: inherit;
+        max-width: 65%;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    h1, h2 {
+        font-size: xx-large;
+    }
+
+}
+
 html {
     -webkit-text-size-adjust: 100%;
 }
@@ -12,44 +73,15 @@ body {
     background-size: 15%;
     color: #404040;
     font-weight: 500;
-    font-size: 0.975rem;
-}
-
-@media (min-width: 300px){
-.pagecontainer {
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    font-size: 80%;
-    max-width: 95%;
-    }
-}
-
-@media (min-width: 400px){
-    .pagecontainer {
-        margin-right: auto;
-        margin-left: auto;
-        position: relative;
-        font-size: 90%;
-        max-width: 80%;
-        }
-
-    }
-
-@media (min-width: 800px){
-    .pagecontainer {
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    font-size: inherit;
-    max-width: 51%;
-  }
+    font-size: 1.1rem;
 }
 
 
 h1 {
     margin-bottom: -0.2rem;
     color: black;
+    font-family: "Cooper-Hewitt";
+    margin-top: 1.5rem;
 }
 
 h2 {
@@ -107,27 +139,40 @@ a:visited{
 
 .contact {
     font-family: "Charter-Racket";
+    word-spacing: 0.2rem;
 }
 
 
 ul {
-    list-style: none;
     list-style-position: outside;
     line-height: 1.35;
     margin-top: 1.5rem;
+    margin-left: -1rem;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.fa-r-project {
+    color: black;
 }
 
 
 .pubs p {
     text-indent: -2rem;
     margin-left: 2rem;
+    width: 90%;
 }
 
 .pubs a {
-    margin-left: 1.7rem;
+    margin-left: 1.9rem;
 }
 
 .pubs h2{
     margin-bottom: -0.5rem;
 }
 
+footer {
+    padding-top: 2rem;
+}
