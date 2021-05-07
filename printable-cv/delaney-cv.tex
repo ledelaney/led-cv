@@ -1,6 +1,15 @@
+%!TEX program = xelatex
+
 \documentclass[]{article}
 
 \usepackage[margin=1in]{geometry}  
+
+% \usepackage{fontspec}
+% \setmainfont{MinionPro-Regular.otf}[
+% Path = /Library/Fonts/minion-pro-cufonfonts/,
+% BoldFont = MinionPro-Bold.otf,
+% ItalicFont = MinionPro-It.otf,
+% BoldItalicFont  = MinionPro-BoldIt.otf]
 
 \usepackage{fontawesome5}
 \usepackage{fancyhdr}
@@ -12,18 +21,23 @@
 
 \usepackage{xcolor}
 \definecolor{light-gray}{gray}{0.25}
+\definecolor{flower}{HTML}{ED4C1B}
+\definecolor{beige}{HTML}{CFA37B}
+\definecolor{darkorange}{HTML}{D35023}
+
 
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=violet,
+    linkcolor=darkorange,
     filecolor=black,      
-    urlcolor=violet,
+    urlcolor=darkorange,
     citecolor = black
 }
 
 \usepackage{enumitem}
 \setitemize{itemsep=0pt, itemindent=10pt}
+
 
 % Reference formatting
 \newlength{\cslhangindent}
@@ -35,7 +49,7 @@
 
 %title formatting
 \usepackage{titlesec}
-\titleformat{\section}[block]{\bfseries\sc}{}{1.2em}{}
+\titleformat{\section}[block]{\bfseries\sc}{}{5em}{}
 %\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
 \titleformat{\subsection}[hang]{\bfseries}{}{1em}{}
 \setcounter{secnumdepth}{0}
@@ -70,14 +84,14 @@
 \backgroundsetup{
 scale=1,
 color=black,
-opacity=0.35,
+opacity=0.95,
 placement=top,
-hshift=38,
-vshift=-20,
+hshift=35,
+vshift=-60,
 %position={5cm,7cm},
 angle=0,
 contents={%
-  \includegraphics[width=0.25\textwidth]{images/peony.png}
+  \includegraphics[width=0.2\textwidth]{images/cherry.png}
   }%
 }
 
@@ -103,7 +117,7 @@ contents={%
 \pagestyle{alldocument}
 
 {\fontsize{20}{64}\selectfont \textsc{Lucy E Delaney}}\\
-\leftskip 3.5em
+\leftskip 4em
 \begin{multicols}{2}
 
 University of Illinois at Chicago\\
@@ -113,10 +127,10 @@ Chicago, IL 60607
 \columnbreak
 
 \begin{flushright}
-\rightskip 3.5em
-\href{mailto:ldelan5@uic.edu}{ldelan5@uic.edu} \textcolor{light-gray}{\faPaperPlane}\\
-\href{https://github.com/ledelaney}{@ledelaney} \textcolor{light-gray}{\faGithub}\\
-\href{https://ledelaney.org}{ledelaney.org} \textcolor{light-gray}{\faDesktop}
+\rightskip 4em
+\href{mailto:ldelan5@uic.edu}{\textbf{ldelan5@uic.edu}} \textcolor{light-gray}{\faPaperPlane}\\
+\href{https://github.com/ledelaney}{\textbf{@ledelaney}} \textcolor{light-gray}{\faGithub}\\
+\href{https://ledelaney.org}{\textbf{ledelaney.org}} \textcolor{light-gray}{\faDesktop}
 \end{flushright}
 
 \end{multicols}
@@ -126,34 +140,32 @@ Chicago, IL 60607
 \section{Interests}
 \vspace{3mm}
 
-\leftskip 1.8em
+\leftskip 3em
 
 Better biology education, conceptual understanding of evolutionary principles, educational \& racial equity, \textcolor{light-gray}{\faRProject}\ for undergraduate education, macroevolution, the evolution of plant breeding systems
 
 \vspace{3mm}
 \section{Education}
-
 \vspace{3mm}
-\leftskip 1.8em
 
-\textbf{Ph.D. candidate, Ecology \& Evolutionary Biology} \hfill \textit{Expected 2022}\\ 
+\textbf{Ph.D. candidate}, Ecology \& Evolutionary Biology \hfill \textit{Expected 2022}\\ 
 University of Illinois at Chicago \hfill Chicago, IL
      
 Dissertation: \emph{The Nature of Adaptation and the Epistemology of Natural Selection} 
 \vspace{0.3cm}
 
-\textbf{M.A., Molecular \& Cellular Biology} \hfill 2016\\ 
+\textbf{Master of Arts}, Molecular \& Cellular Biology \hfill 2016\\ 
 Hunter College of the City University of New York \hfill New York, NY\\
      
 
-\textbf{B.S., Forensic Molecular Biology, Philosophy} \hfill 2012\\ 
+\textbf{Bachelor of Science}, Forensic Molecular Biology, Philosophy \hfill 2012\\ 
 John Jay College of the City University of New York \hfill New York, NY
 
 \vspace{3mm}
 \section{Teaching Honors and Awards}
 
 \vspace{3mm}
-\leftskip 1.8em
+\leftskip 3em
 
 \begin{itemize}[label=$\mathwitch*$]
 \item{\textbf{2021} Recipient, Biological Sciences Department Service Award for online Course Building efforts}
@@ -166,7 +178,7 @@ John Jay College of the City University of New York \hfill New York, NY
 \section{University Teaching}
 
 \vspace{3mm}
-\leftskip 1.8em
+\leftskip 3em
 
 \textit{\textbf{Course Coordinator}}\\
 Planning \& managing course activities, leading the student leaders, and student mentorship.\\
@@ -195,7 +207,7 @@ During my four years as teaching assistant, I taught discussion$^{1}$ and labora
 
 \section{Community Teaching}
 \vspace{3mm}
-\leftskip 1.8em
+\leftskip 3em
 
 \textbf{Course Builder \& Trainer} for the UIC Biological Sciences Department \href{https://www.ledelaney.org/cb-materials}{\faLink} \href{https://github.com/ledelaney/cb-materials}{\faGithub} \hfill 2020--Present
      
@@ -207,7 +219,7 @@ During my four years as teaching assistant, I taught discussion$^{1}$ and labora
 \section{Past and Upcoming Presentations}
 
 \vspace{3mm}
-\leftskip 1.8em
+\leftskip 3em
 
 \textit{\textbf{Evolution Education Research}}
 \begin{itemize}[label=$\mathwitch*$]
@@ -231,7 +243,7 @@ During my four years as teaching assistant, I taught discussion$^{1}$ and labora
 \section{Publications}
 
 \vspace{3mm}
-\leftskip 1.8em
+\leftskip 3em
 
 \begin{cslreferences}
 \textbf{Delaney, Lucy E}. (2012). Nietzsche, nerve stimulation-image connection, and ontology. \emph{John Jay's Finest}, \emph{27}, 99--103. \href{https://ledelaney.org/static/docs/Delaney-JJAYFinest.pdf}{\faFile}\\
@@ -250,7 +262,7 @@ During my four years as teaching assistant, I taught discussion$^{1}$ and labora
 \section{Other Awards and Training}
 
 \vspace{2mm}
-\leftskip 1.8em
+\leftskip 3em
 
 \begin{itemize}[label=$\mathwitch*$]
 \item{\textbf{2020} Completed Illinois Online Network course on online instruction and pedagogy}
@@ -267,7 +279,7 @@ During my four years as teaching assistant, I taught discussion$^{1}$ and labora
 \section{Professional Experience}
 
 \vspace{2mm}
-\leftskip 1.8em
+\leftskip 3em
 
 \textbf{Forensic Molecular Biologist} at NYC Office of Chief Medical Examiner \hfill 2012--2015
    
