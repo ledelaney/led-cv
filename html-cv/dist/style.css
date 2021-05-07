@@ -2,6 +2,7 @@
 
 
 @media (min-width: 300px){
+
     .pagecontainer {
     margin-right: auto;
     margin-left: auto;
@@ -29,11 +30,14 @@
         font-size: large;
     }
 
-
+    footer {
+        font-size: 70%;
+    }
 }
 
 
 @media (min-width: 400px){
+
     .pagecontainer {
         margin-right: auto;
         margin-left: auto;
@@ -50,13 +54,105 @@
         font-size: x-large;
     }
 
-
+    footer {
+        font-size: 70%;
     }
 
-@media (min-width: 800px){
+    .shapes{
+        position: fixed;
+        bottom: 3rem;
+        right: 2rem;
+    }
+    
+    #whiterectangle {
+        opacity: 0;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: #ffffff;
+        transition-property: all;
+        left: 4rem
+    }
+    
+    #bluerectangle {
+        opacity: 0.1;
+        position: relative;
+        width: 200px;
+        height: 100px;
+        background: #334DA1;
+        transform: rotate(10deg);
+        bottom: 10rem;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        transition-duration: 2s;
+        transition-property: all;
+      }
+    
+
+      #goldsquare {
+        opacity: 0.1;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: #E58F25;
+        transform: rotate(45deg);
+        left: 2rem;
+        bottom: 0rem;
+        top: 1.6rem;
+        transition-property: all;
+        transition-duration: 2s;
+      }
+    
+
+    
+      #purplesquare {
+          opacity: 0.1;
+          position: relative;
+          background: #BF1C7F;
+          width: 150px;
+          height: 150px;
+          transform: skew(10deg, 0deg) rotate(-10deg);
+          top: 8rem;
+          left: 2rem;
+          transition-property: all;
+          transition-duration: 2s;
+      }
+
+    
+      #orangerectangle{
+          opacity: 0.1;
+          position: relative;
+          width: 100px;
+          height: 50px;
+          background: #ED4325;
+          transform: rotate(90deg);
+          bottom: 0.45rem;
+          right: 0rem;
+          left: 8rem;
+          transition-property: all;
+          transition-duration: 3s;
+      }
+    
+    
+    
+      #violetrectangle {
+          opacity: 0.1;
+          background: #A49AB4;
+          position: relative;
+          width: 220px;
+          height: 120px;
+          bottom: 9rem;
+          left: 1rem;
+          transition-duration: 2s;
+          transition-property: all;
+      }
+    }
+
+@media (min-width: 1000px){
+
     .pagecontainer {
-        margin-right: auto;
-        margin-left: auto;
+        margin-left: 4em;
         position: relative;
         font-size: inherit;
         max-width: 65%;
@@ -79,6 +175,333 @@
         margin-bottom: 0.5rem;
         text-transform: lowercase;
         font-size: x-large;
+    }
+
+    footer {
+        font-size: 100%;
+    }
+
+    .shapes{
+        position: fixed;
+        bottom: 3rem;
+        right: 2rem;
+    }
+    
+    #whiterectangle {
+        opacity: 1;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: #ffffff;
+        transition-property: all;
+        left: 4rem
+    }
+    
+    #bluerectangle {
+        opacity: 1;
+        position: relative;
+        width: 200px;
+        height: 100px;
+        background: #334DA1;
+        transform: rotate(10deg);
+        bottom: 10rem;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        transition-duration: 2s;
+        transition-property: all;
+      }
+    
+      #bluerectangle:hover {
+          transform: rotate(200deg);
+      }
+    
+      #goldsquare {
+        opacity: 1;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: #E58F25;
+        transform: rotate(45deg);
+        left: 2rem;
+        bottom: 0rem;
+        top: 1.6rem;
+        transition-property: all;
+        transition-duration: 2s;
+      }
+    
+      #goldsquare:hover {
+        width: 200px;
+        height: 200px;
+        background: rgb(69, 116, 77);
+        border-radius: 50%;
+        transform: rotate(30deg);
+      }
+    
+      #purplesquare {
+          opacity: 1;
+          position: relative;
+          background: #BF1C7F;
+          width: 150px;
+          height: 150px;
+          transform: skew(10deg, 0deg) rotate(-10deg);
+          top: 8rem;
+          left: 2rem;
+          transition-property: all;
+          transition-duration: 2s;
+      }
+    
+      #purplesquare:hover {
+        position: relative;
+        background: #BF1C7F;
+        width: 126px;
+        height: 380px;
+    }
+    
+      #orangerectangle{
+          opacity: 1;
+          position: relative;
+          width: 100px;
+          height: 50px;
+          background: #ED4325;
+          transform: rotate(90deg);
+          bottom: 0.45rem;
+          right: 0rem;
+          left: 8rem;
+          transition-property: all;
+          transition-duration: 3s;
+      }
+    
+      #orangerectangle:hover{
+        width: 200px;
+        height: 250px;
+        background: #ED4325;
+        opacity: 0.5;
+        border-radius: 30%;
+      }
+    
+    
+    
+      #whiterectangle:hover {
+        position: relative;
+        width: 100px;
+        height: 90px;
+      }
+      #whiterectangle:hover:before,
+      #whiterectangle:hover:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: rgb(202, 2, 2);
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+      #whiterectangle:hover:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+    
+    
+    
+      #violetrectangle {
+          opacity: 1;
+          background: #A49AB4;
+          position: relative;
+          width: 220px;
+          height: 120px;
+          bottom: 9rem;
+          left: 1rem;
+          transition-duration: 2s;
+          transition-property: all;
+      }
+    
+      #violetrectangle:hover {
+        background: #7e4fc9;
+        position: relative;
+        bottom: 9rem;
+        left: 1rem;
+        transform: scale(3);
+        opacity: 0.3;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .pagecontainer {
+        margin-left: 8em;
+        position: relative;
+        font-size: inherit;
+        max-width: 65%;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    h1, h2 {
+        font-size: xx-large;
+    }
+
+    header h1 {
+        font-size: 250%;
+    }
+    
+    header h2 {
+        font-style: normal;
+        margin-bottom: 0.5rem;
+        text-transform: lowercase;
+        font-size: x-large;
+    }
+
+    footer {
+        font-size: 100%;
+    }
+
+    .shapes{
+        position: fixed;
+        bottom: 3rem;
+        right: 2rem;
+    }
+    
+    #whiterectangle {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: #ffffff;
+        transition-property: all;
+        left: 4rem
+    }
+    
+    #bluerectangle {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        background: #334DA1;
+        transform: rotate(10deg);
+        bottom: 10rem;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        transition-duration: 2s;
+        transition-property: all;
+      }
+    
+      #bluerectangle:hover {
+          transform: rotate(200deg);
+      }
+    
+      #goldsquare {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: #E58F25;
+        transform: rotate(45deg);
+        left: 2rem;
+        bottom: 0rem;
+        top: 1.6rem;
+        transition-property: all;
+        transition-duration: 2s;
+      }
+    
+      #goldsquare:hover {
+        width: 200px;
+        height: 200px;
+        background: rgb(69, 116, 77);
+        border-radius: 50%;
+        transform: rotate(30deg);
+      }
+    
+      #purplesquare {
+          position: relative;
+          background: #BF1C7F;
+          width: 150px;
+          height: 150px;
+          transform: skew(10deg, 0deg) rotate(-10deg);
+          top: 8rem;
+          left: 2rem;
+          transition-property: all;
+          transition-duration: 2s;
+      }
+    
+      #purplesquare:hover {
+        position: relative;
+        background: #BF1C7F;
+        width: 126px;
+        height: 380px;
+    }
+    
+      #orangerectangle{
+          position: relative;
+          width: 100px;
+          height: 50px;
+          background: #ED4325;
+          transform: rotate(90deg);
+          bottom: 0.45rem;
+          right: 0rem;
+          left: 8rem;
+          transition-property: all;
+          transition-duration: 3s;
+      }
+    
+      #orangerectangle:hover{
+        width: 200px;
+        height: 250px;
+        background: #ED4325;
+        opacity: 0.5;
+        border-radius: 30%;
+      }
+    
+    
+    
+      #whiterectangle:hover {
+        position: relative;
+        width: 100px;
+        height: 90px;
+      }
+      #whiterectangle:hover:before,
+      #whiterectangle:hover:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: rgb(202, 2, 2);
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+      #whiterectangle:hover:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+    
+    
+    
+      #violetrectangle {
+          background: #A49AB4;
+          position: relative;
+          width: 220px;
+          height: 120px;
+          bottom: 9rem;
+          left: 1rem;
+          transition-duration: 2s;
+          transition-property: all;
+      }
+    
+      #violetrectangle:hover {
+        background: #7e4fc9;
+        position: relative;
+        bottom: 9rem;
+        left: 1rem;
+        transform: scale(3);
+        opacity: 0.3;
     }
 
 }
@@ -128,13 +551,13 @@ b {
 
 a {
     text-decoration: none;
-    color: #8f4e8d;
+    color: #BF1C7F;
     font-weight: bold;
 }
 
 a:hover{
     text-decoration: none;
-    color: goldenrod;
+    color: #E58F25;
 }
 
 a:visited{
@@ -181,3 +604,7 @@ p {
 footer {
     padding-top: 2rem;
 }
+
+
+
+  
