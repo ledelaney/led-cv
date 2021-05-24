@@ -1,15 +1,16 @@
 %!TEX program = xelatex
 
+
 \documentclass[]{article}
 
 \usepackage[margin=1in]{geometry}  
 
-% \usepackage{fontspec}
-% \setmainfont{MinionPro-Regular.otf}[
-% Path = /Library/Fonts/minion-pro-cufonfonts/,
-% BoldFont = MinionPro-Bold.otf,
-% ItalicFont = MinionPro-It.otf,
-% BoldItalicFont  = MinionPro-BoldIt.otf]
+\usepackage{fontspec}
+\setmainfont{MinionPro-Regular.otf}[
+Path = /Library/Fonts/minion-pro-cufonfonts/,
+BoldFont = MinionPro-Bold.otf,
+ItalicFont = MinionPro-It.otf,
+BoldItalicFont  = MinionPro-BoldIt.otf]
 
 \usepackage{fontawesome5}
 \usepackage{fancyhdr}
@@ -20,7 +21,7 @@
 \usepackage{ragged2e}
 
 \usepackage{xcolor}
-\definecolor{light-gray}{gray}{0.25}
+\definecolor{light-gray}{gray}{0.35}
 \definecolor{flower}{HTML}{ED4C1B}
 \definecolor{beige}{HTML}{CFA37B}
 \definecolor{darkorange}{HTML}{D35023}
@@ -36,7 +37,7 @@
 }
 
 \usepackage{enumitem}
-\setitemize{itemsep=0pt, itemindent=10pt}
+\setitemize{itemsep=0pt, itemindent=15pt}
 
 
 % Reference formatting
@@ -49,13 +50,13 @@
 
 %title formatting
 \usepackage{titlesec}
-\titleformat{\section}[block]{\bfseries\sc}{}{5em}{}
+\titleformat{\section}[block]{\bfseries}{}{5em}{}
 %\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
-\titleformat{\subsection}[hang]{\bfseries}{}{1em}{}
+%\titleformat{\subsection}[hang]{\bfseries}{}{1em}{}
 \setcounter{secnumdepth}{0}
 
 \titlespacing*{\section}
-{0pt}{12pt}{3pt}
+{0pt}{12pt}{10pt}
 \titlespacing*{\subsection}
 {0pt}{10pt}{3pt}
 
@@ -109,7 +110,7 @@ contents={%
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead[R]{}
 \fancyfoot[R]{\footnotesize{\today\ $\vert$ page \thepage\ of \pageref{LastPage}}\\
-\footnotesize{L E Delaney \href{https://github.com/ledelaney/led-cv}{\faGithub}}}}
+\footnotesize{Lucy Delaney \href{https://github.com/ledelaney/led-cv}{\faGithub}}}}
 
 
 \begin{document}
@@ -137,162 +138,269 @@ Chicago, IL 60607
 
 \vspace{3mm}
 
-\section{Interests}
-\vspace{3mm}
+\section{\fontsize{16}{48}\selectfont Education}
 
-\leftskip 3em
-
-Better biology education, conceptual understanding of evolutionary principles, educational \& racial equity, \textcolor{light-gray}{\faRProject}\ for undergraduate education, macroevolution, the evolution of plant breeding systems
-
-\vspace{3mm}
-\section{Education}
-\vspace{3mm}
-
-\textbf{Ph.D. candidate}, Ecology \& Evolutionary Biology \hfill \textit{Expected Fall 2021}\\ 
-University of Illinois at Chicago \hfill Chicago, IL
-     
-Dissertation: \emph{What does it mean to understand natural selection?} 
-\vspace{0.3cm}
-
-\textbf{Master of Arts}, Molecular \& Cellular Biology \hfill 2016\\ 
-Hunter College of the City University of New York \hfill New York, NY\\
-     
-
-\textbf{Bachelor of Science}, Forensic Molecular Biology, Philosophy \hfill 2012\\ 
-John Jay College of the City University of New York \hfill New York, NY
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{University of Illinois at Chicago}
+\end{center}
+}
+&
+\parbox{0.65\textwidth}{
+%\leftskip 1em
+PhD, Ecology and Evolutionary Biology (Expected Fall 2021)\\
+Dissertation: \textit{How do we understand natural selection?}\\
+Advisor: Joel Brown
+}
+\end{tabular}
 
 \vspace{3mm}
-\section{Teaching Honors and Awards}
+
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{Hunter College}
+\end{center}
+}
+&
+\parbox{0.65\textwidth}{
+MA, Molecular and Cellular Biology (2016)
+}
+\end{tabular}
 
 \vspace{3mm}
-\leftskip 3em
 
-\begin{itemize}[label=$\mathwitch*$]
-\item{\textbf{2021} Recipient, Biological Sciences Department Service Award for online Course Building efforts}
-\item{\textbf{2021} Honorable mention, UIC Graduate Student Excellence in Teaching and Mentoring Award}
-\item{\textbf{2020} Recipient, Biological Sciences Department Graduate Teaching Award for BIOS 220}
-\item{\textbf{2018} Recipient, Biological Sciences Department Graduate Teaching Award for BIOS 430}
-\end{itemize}
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{John Jay College of Criminal Justice}
+\end{center}
+}
+&
+\parbox{0.65\textwidth}{
+BS, Forensic Molecular Biology (2012)\\
+Minor: Philosophy
+}
+\end{tabular}
 
-\vspace{2mm}
-\section{University Teaching}
-
-\vspace{3mm}
-\leftskip 3em
-
-\textit{\textbf{Course Coordinator}}\\
-Planning \& managing course activities, leading the student leaders, and student mentorship.\\
-
-\textbf{BIOS 196/296} Biology Colloquium \href{https://www.uicbcq.org/}{\faLink} \hfill \textit{Beginning} Fall 2021--Spring 2022\\%\href{www.nothing.com}{\faGithub} \hfill Beginning Fall 2021--Spring 2022\\
-
-\textit{\textbf{Graduate Teaching Assistant}}\\
-During my four years as teaching assistant, I taught discussion$^{1}$ and laboratory$^{2}$ sections, created instructional materials$^{3}$, held drop-in hours$^{4}$, and worked with students on \textcolor{light-gray}{\faRProject}\ programming skills$^{5}$ in courses ranging from introductory (100-level) to advanced (400-level). I also taught online \& managed Blackboard administration$^{6}$ during Covid-19.\\
-
-\textbf{BIOS 220} Mendelian \& Molecular Genetics$^{1, 3, 4, 6}$ \href{https://ledelaney.org/teaching/genetics220/}{\faLink} \href{https://github.com/ledelaney/Genetics220}{\faGithub}
- \hfill Summer 2018, Fall 2019--Summer 2020
-
-
-\textbf{BIOS 331} General Ecology Laboratory$^{2, 4, 5}$ \href{https://github.com/ledelaney/GeneralEcologyMaterials}{\faGithub} \hfill Summer 2019
-
-     
-\textbf{BIOS 230} Ecology \& Evolution$^{3, 4}$ \hfill Spring 2019
-     
-\textbf{BIOS 430} Evolution$^{3, 4, 5}$ \hfill Fall 2017--Fall 2018
-
-\textbf{BIOS 120} Biology of Populations \& Communities$^{2, 4}$ \hfill Fall 2016--Spring 2017
-
-
-\clearpage
-\pagestyle{alldocument}
-
-\section{Community Teaching}
-\vspace{3mm}
-\leftskip 3em
-
-\textbf{Course Builder \& Trainer} for the UIC Biological Sciences Department \href{https://www.ledelaney.org/cb-materials}{\faLink} \href{https://github.com/ledelaney/cb-materials}{\faGithub} \hfill 2020--Present\\
-\textit{Tranining faculty and TAs in online pedagogy and instructional tools.}
-     
-\textbf{Tutor} at Nurturing Wisdom Tutoring \hfill 2018--2020
-
-\textbf{Substitute Teacher} in Chicago-area Charter Schools \hfill 2015-2016
-
-\vspace{2mm}
-\section{Past and Upcoming Presentations}
+\section{\fontsize{16}{48}\selectfont Teaching Honors}
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{Graduate Student Excellence in Teaching and Mentoring Award}
+\end{center}
+}
+&
+\parbox{0.70\textwidth}{
+\textbf{2021} Honorable Mention\\
+One of three PhD candidates recognized by the University for\\ excellence in undergraduate teaching and mentoring.
+}
+\end{tabular}
 
 \vspace{3mm}
-\leftskip 3em
 
-\textit{\textbf{Evolution Education Research}}
-\begin{itemize}[label=$\mathwitch*$]
-\item{June 2021 \textit{upcoming} at Annual Evolution Conference $\vert$ Virtual Talk 
-\hspace{0.3mm} \href{https://ledelaney.org/talks/2021evolution}{\faImages} \href{https://github.com/ledelaney/06-21-Evolution}{\faGithub}}
-\item{March 2021 at Midwest Ecology and Evolution Conference $\vert$ \faAward\ Awarded Best Graduate Talk \hspace{0.3mm} \href{https://ledelaney.org/talks/2021meec/}{\faImages} \href{https://github.com/ledelaney/03-21-MEEC}{\faGithub}}
-\item{January 2021 at SABER West $\vert$ Virtual Roundtable \hspace{0.3mm} \href{https://ledelaney.org/talks/2021saberw/}{\faImages} \href{https://github.com/ledelaney/01-21-SABERwest}{\faGithub}}
-\end{itemize}
-
-\vspace{2mm}
-
-\textit{\textbf{Flowering Plant Breeding Systems}}
-
-\begin{itemize}[label=$\mathwitch*$]
-\item{July 2021 \textit{upcoming} at Annual Meeting of the Botanical Society of America $\vert$ Virtual Talk}
-\item{July 2018 at Annual Meeting of the Botanical Society of America $\vert$ Rochester, MN $\vert$ Poster \hspace{0.3mm} \href{https://ledelaney.org/static/posters/poster.png}{\faFileImage}}
-\item{August 2017 at microMORPH Summer Course $\vert$ Arnold Aborteum, Harvard $\vert$ Talk \hspace{0.3mm} \href{https://www.dropbox.com/s/o7hcg5riw97wf9i/08-2017-microMORPH.pdf?dl=1}{\faImages}}
-\end{itemize}
-\vspace{1mm}
-
-\section{Publications}
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{Service Award}
+\end{center}
+}
+&
+\parbox{0.70\textwidth}{
+\textbf{2021} Department of Biological Sciences Graduate Service Award\\
+Awarded for Department-wide efforts to aid in online instruction.
+}
+\end{tabular}
 
 \vspace{3mm}
-\leftskip 3em
+
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{Graduate Student Teaching Award}
+\end{center}
+}
+&
+\parbox{0.70\textwidth}{
+\textbf{2020} Department of Biological Sciences Graduate Teaching Award\\
+Awarded for excellence in teaching in Genetics.\\
+\textbf{2018} Department of Biological Sciences Graduate Teaching Award\\
+Awarded for excellence in teaching in Evolution.
+}
+\end{tabular}
+
+\vspace{3mm}
+
+\section{\fontsize{16}{48}\selectfont University Teaching}
+
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{Course Coordinator}
+\end{center}
+}
+&
+\parbox{0.60\textwidth}{
+\textbf{Biology Colloquium}\ \textit{Fall 2021}\ \href{https://www.uicbcq.org/}{\faLink} \href{https://github.com/ledelaney/cb-materials}{\faGithub}\\
+Designed to generate a sense of community, belonging, and excitement among new biology majors. Composed of newly-admitted freshman and transfers, and upper-division majors ready to take on a leadership role. I design the course structure and oversee all activities, with emphasis on student mentoring at both levels.}
+\end{tabular}
+
+\vspace{3mm}
+
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{Course Builder}
+\end{center}
+}
+&
+\parbox{0.60\textwidth}{
+\textbf{Biological Sciences Department}\ \textit{Summer 2020--Present}\ \href{https://www.ledelaney.org/cb-materials}{\faLink} \href{https://github.com/ledelaney/cb-materials}{\faGithub}\\
+Tranining faculty and Graduate Teaching Assistants in online pedagogy and instructional tools with written materials, tutorial videos, and drop-in hours. Assisting in building courses from the ground up, and providing technical support throughout online delivery.
+}
+\end{tabular}
+
+\vspace{3mm}
+
+\begin{tabular}{l | l}
+\parbox{0.20\textwidth}{
+\begin{center}
+\textsc{Graduate Teaching Assistant}
+\end{center}
+}
+&
+\parbox{0.68\textwidth}{
+During my eleven semesters as teaching assistant, I taught discussion$^{1}$ and laboratory$^{2}$ sections, designed \& created instructional materials$^{3}$, held study sessions$^{4}$, and worked with students on \textcolor{light-gray}{\faRProject}\ programming skills$^{5}$ in courses ranging from introductory to advanced. I also taught online and managed Blackboard administration$^{6}$ during Covid-19.\\
+
+\textbf{Mendelian and Molecular Genetics}$^{1, 3, 4, 6}$ \href{https://ledelaney.org/teaching/genetics220/}{\faLink} \href{https://github.com/ledelaney/Genetics220}{\faGithub} \hfill Fall 2019--Summer 2020\\
+\textbf{General Ecology Laboratory}$^{2, 4, 5}$ \href{https://github.com/ledelaney/GeneralEcologyMaterials}{\faGithub} \hfill Summer 2019\\
+\textbf{Ecology and Evolution}$^{3, 4}$ \hfill Spring 2019\\
+\textbf{Evolution}$^{3, 4, 5}$\hfill Fall 2017--Fall 2018\\
+\textbf{Biology of Populations and Communities}$^{2, 4}$ \hfill Fall 2016--Spring 2017
+}
+\end{tabular}
+
+% \vspace{3mm}
+
+
+% \begin{tabular}{l | l}
+% \parbox{0.20\textwidth}{
+% \begin{center}
+% \textsc{Graduate Teaching Assistant}
+% \end{center}
+% }
+% &
+% \parbox{0.80\textwidth}{
+% \textbf{Mendelian and Molecular Genetics}\ \textit{Fall 2019--Summer 2020}\ \href{https://ledelaney.org/teaching/genetics220/}{\faLink} \href{https://github.com/ledelaney/Genetics220}{\faGithub}\\
+% Taught discussion section, designed and created instructional materials,\\ and oversaw Blackboard administration.\\
+% \textbf{General Ecology Laboratory}\ \textit{Summer 2019}\ \href{https://github.com/ledelaney/GeneralEcologyMaterials}{\faGithub}\\
+% Taught laboratory section, including field trips to local natural areas\\ for field work, and provided a gentle introduction to \textcolor{light-gray}{\faRProject}.\\
+% \textbf{Ecology and Evolution}\ \textit{Spring 2019}\\
+% Created instructional materials and held twice-weekly study sessions\\ for students.\\
+% \textbf{Evolution}\ \textit{Fall 2017--Fall 2018}\\
+% Created instructional materials and worked with students on\\ \textcolor{light-gray}{\faRProject} programming skills.\\
+% \textbf{Biology of Populations and Communities}\ \textit{Fall 2016--Spring 2017}\\
+% Taught two sections of introductory laboratory, created instructional\\ materials, and held weekly study sessions for students.
+% }
+% \end{tabular}
+
+\vspace{9mm}
+
+\section{\fontsize{16}{48}\selectfont Conference Presentations}
+\vspace{-7mm}
+
+\subsection{\fontsize{12}{36}\selectfont \textit{Evolution Education Research}}
+
+\textbf{June 2021} at Annual Evolution Conference\ $\vert$ Virtual Talk \hspace{0.4mm} \href{https://ledelaney.org/talks/2021evolution}{\faImages} \href{https://github.com/ledelaney/06-21-Evolution}{\faGithub}\\
+\textbf{March 2021} at Midwest Ecology and Evolution Conference\ $\vert$ \faAward\ Awarded Best Graduate Talk\ \href{https://ledelaney.org/talks/2021meec/}{\faImages} \href{https://github.com/ledelaney/03-21-MEEC}{\faGithub}\\
+\textbf{January 2021} at SABER West\ $\vert$ Virtual Roundtable \hspace{0.4mm} \href{https://ledelaney.org/talks/2021saberw/}{\faImages} \href{https://github.com/ledelaney/01-21-SABERwest}{\faGithub}
+
+\vspace{-5mm}
+
+\subsection{\fontsize{12}{36}\selectfont \textit{Flowering Plant Breeding Systems}}
+
+\textbf{July 2021} upcoming, at Annual Meeting of the Botanical Society of America\ $\vert$ Virtual Talk\\
+\textbf{July 2018} at Annual Meeting of the Botanical Society of America\ $\vert$ Poster \hspace{0.4mm} \href{https://ledelaney.org/static/posters/poster.png}{\faFileImage}\\
+\textbf{August 2017} at microMORPH, Arnold Arboretum of Harvard University\ $\vert$ Talk \hspace{0.4mm} \href{https://www.dropbox.com/s/o7hcg5riw97wf9i/08-2017-microMORPH.pdf?dl=1}{\faImages}
+
+
+\vspace{7mm}
+
+\section{\fontsize{16}{48}\selectfont Publications}
 
 \begin{cslreferences}
 \textbf{Delaney, Lucy E}. (2012). Nietzsche, nerve stimulation-image connection, and ontology. \emph{John Jay's Finest}, \emph{27}, 99--103. \href{https://ledelaney.org/static/docs/Delaney-JJAYFinest.pdf}{\faFile}\\
 \end{cslreferences}
 
-\textbf{\textit{In preparation}}
-\vspace{2mm}
+\vspace{-7mm}
 
+\subsection{\fontsize{12}{36}\selectfont \textit{In submission}}
 \begin{cslreferences}
+\textbf{Delaney, Lucy E}, Ramanauskas, K., \& Igić, B. The phylogenetic distribution and frequency of self-incompatibility in Fabaceae. \textit{Submitted to the International Journal of Plant Sciences}.\\
 
-\textbf{Delaney, Lucy E} \& Brown, J. University students' explanations of adaptation. I. Dimensions of conception..
-
-\textbf{Delaney, Lucy E} \& Brown, J. University students' explanations of adaptation. II. Dimensions of misconception..
-
-\textbf{Delaney, Lucy E}, Ramanauskas, K., \& Igić, B. The phylogenetic distribution and frequency of self-incompatibility in Fabaceae.
-
-\textbf{Delaney, Lucy E} \& Igić, B. The orchids and their breeding systems.\\
+\textbf{Delaney, Lucy E}. The orchids and their breeding systems. \textit{Submitted to Orchids magazine}.
 \end{cslreferences}
-\vspace{2mm}
 
-\section{Other Awards and Training}
 
-\vspace{2mm}
-\leftskip 3em
+
+\subsection{\fontsize{12}{36}\selectfont \textit{In preparation}}
+\begin{cslreferences}
+\textbf{Delaney, Lucy E} \& Brown, J. University students' explanations of adaptation. I. Dimensions of conception.\\
+
+\textbf{Delaney, Lucy E} \& Brown, J. University students' explanations of adaptation. II. Dimensions of misconception.
+\end{cslreferences}
+\vspace{6mm}
+
+
+\section{\fontsize{16}{48}\selectfont Professional Activities}
+
+\vspace{-7mm}
+
+\subsection{\fontsize{12}{36}\selectfont \textit{Service}}
 
 \begin{itemize}[label=$\mathwitch*$]
-\item{\textbf{2020} Completed Illinois Online Network course in online instruction and pedagogy}
+\item{\textbf{2021} Participant in the Undergraduate Mentoring Program at the Annual Evolution Conference}
+\item{\textbf{2021} Invited member of UIC student advisory group concerning graduate student teaching support}
 \item{\textbf{2020} Participant in the 2020 Chicago \textcolor{light-gray}{\faRProject}\ Collaborative Conference \href{https://chircollab.github.io/}{\faLink}}
-\item{\textbf{2018} Recipient of the Biological Sciences Department Travel Award}
 \item{\textbf{2018} Reviewer for International Journal of Botany (1x), Oxford Bibliographies (1x)}
-\item{\textbf{2017} Accepted to NSF-funded workshop on Bayesian Analysis of Macroevolutionary Mixtures \href{http://bamm-project.org/index.html}{\faLink}}
-\item{\textbf{2017} Recipient of the Biological Sciences Department Travel Award}
-\item{\textbf{2017} Accepted to microMORPH Plant Anatomy Summer Course at Harvard University \href{https://web.archive.org/web/20170922060558/http://arboretum.harvard.edu/tracing-evolution-form-function/"}{\faLink}}
 \item{\textbf{2016} General horticulture volunteer at Garfield Park Conservatory \href{https://garfieldconservatory.org/}{\faLink}}
 \end{itemize}
 
-\vspace{2mm}
-\section{Professional Experience}
+\vspace{-7mm}
 
-\vspace{2mm}
-\leftskip 3em
+\subsection{\fontsize{12}{36}\selectfont \textit{Memberships}}
 
-\textbf{Forensic Molecular Biologist} at NYC Office of Chief Medical Examiner \hfill 2012--2015
+\begin{itemize}[label=$\mathwitch*$]
+\item{Society for the Study of Evolution}
+\item{Botanical Society of America}
+\item{Field Museum Women in Science}
+\item{Society for the Advancement of Biology Education Research (SABER)}
+\end{itemize}
+\vspace{2mm}
+
+\section{\fontsize{16}{48}\selectfont Other Awards}
+
+\begin{itemize}[label=$\mathwitch*$]
+\item{\textbf{2018} Recipient of the Biological Sciences Department Travel Award}
+\item{\textbf{2017} Accepted to NSF-funded workshop on Bayesian Analysis of Macroevolutionary Mixtures \href{http://bamm-project.org/index.html}{\faLink}}
+\item{\textbf{2017} Recipient of the Biological Sciences Department Travel Award}
+\item{\textbf{2017} Accepted to microMORPH Plant Anatomy Summer Course at Harvard University \href{https://web.archive.org/web/20170922060558/http://arboretum.harvard.edu/tracing-evolution-form-function/"}{\faLink}}
+\end{itemize}
+\vspace{2mm}
+
+\section{\fontsize{16}{48}\selectfont Selected Professional Experience}
+
+\textbf{Forensic Molecular Biologist} at NYC Office of Chief Medical Examiner \hfill 2012--2015\\
    
-\textbf{Health Research Intern} at NYC Department of Health \hfill 2011-2012
+\textbf{Health Research Intern} at NYC Department of Health \hfill 2011-2012\\
      
 \textbf{Field Manager \& Administrative Assistant} at Working Families Party \hfill 2008-2011\\
-\textit{New York State political action organization.}
+\textit{New York State political action organization focused on economic justice.}\\
 
+\textbf{Other positions} \hfill 2007-2020\\
+\textit{Like so many of our students, I held a variety of positions to support myself throughout my scholarly career: cashier, hostess, waitress, receptionist, babysitter, dog walker, bowling alley mechanic, substitute teacher, tutor, and barista. Such experiences inform my mentorship of students that face the unique challenges inherent in balancing work with the pursuit of postsecondary degrees.}
+
+\vspace{3mm}
 
 \end{document}
