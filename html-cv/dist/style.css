@@ -585,8 +585,9 @@ p {
 
 .pubs p {
     text-indent: -2rem;
-    margin-left: 2rem;
-    width: 90%;
+    margin-left: 3.5rem;
+    width: 85%;
+    line-height: normal;
 }
 
 .pubs a {
