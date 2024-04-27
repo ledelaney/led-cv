@@ -1,13 +1,12 @@
 %!TEX program = xelatex
 
-
 \documentclass[]{article}
 
 \usepackage[margin=1in]{geometry}  
 
 \usepackage{fontspec}
 \setmainfont{MinionPro-Regular.otf}[
-Path = /Library/Fonts/minion-pro-cufonfonts/,
+Path = ...fonts/minion-pro-cufonfonts/,
 BoldFont = MinionPro-Bold.otf,
 ItalicFont = MinionPro-It.otf,
 BoldItalicFont  = MinionPro-BoldIt.otf]
@@ -88,7 +87,7 @@ scale=1,
 color=black,
 opacity=0.95,
 placement=top,
-hshift=67,
+hshift=90,
 vshift=-55,
 %position={5cm,7cm},
 angle=-10,
@@ -104,32 +103,32 @@ contents={%
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead[R]{\href{mailto:lucyd@ucr.edu}{lucyd@ucr.edu} \faPaperPlane\\
 \href{https://ledelaney.org}{ledelaney.org} \faLaptop}
-\fancyfoot[R]{\footnotesize{\today\ $\vert$ page \thepage\ of \pageref{LastPage}}\\
+\fancyfoot[R]{\footnotesize{\today\ $\vert$ CV page \thepage\ of \pageref{LastPage}}\\
 \footnotesize{L E Delaney \href{https://github.com/ledelaney/led-cv}{\faGithub}}}}
 
 \fancypagestyle{alldocument}{
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[R]{}
-\fancyfoot[R]{\footnotesize{\today\ $\vert$ page \thepage\ of \pageref{LastPage}}\\
-\footnotesize{Lucy Delaney \href{https://github.com/ledelaney/led-cv}{\faGithub}}}}
+\fancyfoot[L]{\footnotesize{page \thepage\ of \textbf{\pageref{LastPage}}}}
+\fancyfoot[R]{\footnotesize{\today\ $\vert$ Lucy E Delaney}}}
 
 
 \begin{document}
 \BgThispage
 \pagestyle{alldocument}
 
-{\fontsize{20}{64}\selectfont \textsc{Lucy E Delaney}}\\
-\leftskip 3em
+{\fontsize{20}{64}\selectfont \textsc{Lucy E Delaney}}
+\leftskip 1.35em
 \begin{multicols}{2}
 
-2372 Spieth Hall\\
-College of Natural and Agricultural Sciences\\
-University California, Riverside
+\textit{Junior Faculty Distinguished Teaching Professor}\\
+\textit{College of Natural and Agricultural Sciences}\\
+\textit{University of California, Riverside}
+%{\small2372 Spieth Hall}
 
 \columnbreak
 
 \begin{flushright}
-\rightskip 4em
+\rightskip 2em
 \href{mailto:lucyd@ucr.edu}{\textbf{lucyd@ucr.edu}} \faPaperPlane\\
 \href{https://github.com/ledelaney}{\textbf{@ledelaney}} \faGithub\\
 \href{https://ledelaney.org}{\textbf{ledelaney.org}} \faDesktop
@@ -151,10 +150,10 @@ University California, Riverside
 \parbox{0.65\textwidth}{
 %\leftskip 1em
 Assistant Professor of Teaching, \textit{December 2021}-\\
-Department of Ecology, Evolution, and Organismal Biology}
+Department of Evolution, Ecology, and Organismal Biology}
 \end{tabular}
 
-
+\vspace{4mm}
 \section{\fontsize{16}{48}\selectfont Education}
 
 \begin{tabular}{l | l}
@@ -166,7 +165,7 @@ Department of Ecology, Evolution, and Organismal Biology}
 &
 \parbox{0.65\textwidth}{
 %\leftskip 1em
-PhD in Ecology and Evolutionary Biology\\
+PhD in Ecology and Evolutionary Biology (\textit{Fall 2021})\\
 \textit{How do we understand natural selection?}\\
 Advisors: Joel S. Brown and Boris Igi\'c}
 \end{tabular}
@@ -181,7 +180,7 @@ Advisors: Joel S. Brown and Boris Igi\'c}
 }
 &
 \parbox{0.65\textwidth}{
-MA in Molecular and Cellular Biology
+MA in Molecular and Cellular Biology (\textit{2016})
 }
 \end{tabular}
 
@@ -195,55 +194,85 @@ MA in Molecular and Cellular Biology
 }
 &
 \parbox{0.65\textwidth}{
-BS in Forensic Molecular Biology, Philosophy
+BS in Forensic Molecular Biology, Philosophy (\textit{2012})
 }
 \end{tabular}
 
-\section{\fontsize{16}{48}\selectfont Teaching Honors}
+\vspace{3mm}
+
+\section{\fontsize{16}{48}\selectfont Teaching Activities and Honors}
+
+
 \begin{tabular}{l | l}
 \parbox{0.30\textwidth}{
 \begin{center}
-\textsc{Graduate Student Excellence in Teaching and Mentoring Award}
+\textsc{Junior Faculty Excellence in Teaching Award}
 \end{center}
 }
 &
-\parbox{0.70\textwidth}{
+\parbox{0.65\textwidth}{
+\textbf{2024} Recipient\\
+Nominated by the Department of Evolution, Ecology, and Organismal Biology and awarded by the UCR Academy of Distinguished Teaching.}
+\end{tabular}
+
+\vspace{2.5mm}
+
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{Faculty Lead for\\ RIDLE 4X and HHMI IE3}
+\end{center}
+}
+&
+\parbox{0.65\textwidth}{
+\textbf{2023-2024} Elected Faculty Cohort Lead\\
+A collaborative faculty development program hosted by XCITE with funding from HHMI, centered on the development of equitable and inclusive pedagogy in introductory science courses.
+}
+\end{tabular}
+
+\vspace{2.5mm}
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{Deep Teaching Residency Fellow}
+\end{center}
+}
+&
+\parbox{0.65\textwidth}{
+\textbf{2022-2023} Selected Fellow\\
+An NSF-funded year-long faculty development program evaluating how instructor self-awareness, students' personal histories, and broad social structures impact the development of an equitable pedagogy.}
+\end{tabular}
+
+\vspace{2.5mm}
+
+\begin{tabular}{l | l}
+\parbox{0.30\textwidth}{
+\begin{center}
+\textsc{UIC Graduate Student Excellence in Teaching and Mentoring Award}
+\end{center}
+}
+&
+\parbox{0.65\textwidth}{
 \textbf{2021} Honorable Mention\\
-One of three PhD candidates recognized by the University for\\ excellence in undergraduate teaching and mentoring.
+One of three PhD candidates recognized by the University for excellence in undergraduate teaching and mentoring.
 }
 \end{tabular}
 
-\vspace{3mm}
+\vspace{2.5mm}
 
 \begin{tabular}{l | l}
 \parbox{0.30\textwidth}{
 \begin{center}
-\textsc{Service Award}
+\textsc{Graduate Student Teaching and Service Awards}
 \end{center}
 }
 &
-\parbox{0.70\textwidth}{
-\textbf{2021} Department of Biological Sciences Graduate Service Award\\
-Awarded for Department-wide efforts to aid in online instruction.
+\parbox{0.65\textwidth}{
+\textbf{2021, 2020, 2018} Recipient of Three Departmental Awards\\
+Recognition for excellence in teaching in Evolution and Genetics, and service to the department in the transition to online instruction during Covid.
 }
 \end{tabular}
 
-\vspace{3mm}
-
-\begin{tabular}{l | l}
-\parbox{0.30\textwidth}{
-\begin{center}
-\textsc{Graduate Student Teaching Award}
-\end{center}
-}
-&
-\parbox{0.70\textwidth}{
-\textbf{2020} Department of Biological Sciences Graduate Teaching Award\\
-Awarded for excellence in teaching in Genetics.\\
-\textbf{2018} Department of Biological Sciences Graduate Teaching Award\\
-Awarded for excellence in teaching in Evolution.
-}
-\end{tabular}
 
 \vspace{4mm}
 
@@ -260,6 +289,17 @@ Awarded for excellence in teaching in Evolution.
 }
 &
 \parbox{0.60\textwidth}{
+
+\textbf{Introduction to Organismal Biology}\hfill Winter 2024\\
+\textbf{Introduction to Organismal Biology}\hfill Fall 2023\\
+\textbf{Cellular Basis of Life}\hfill Fall 2023\\
+\textbf{Population Genetics and Genomics}\hfill Summer 2023\\
+\textbf{Introductory Evolution and Ecology}\hfill Spring 2023\\
+\textbf{Cellular Basis of Life}\hfill Spring 2023\\
+\textbf{Introductory Evolution and Ecology}\hfill Winter 2023\\
+\textbf{Freshmen Advising Seminar}\hfill Fall 2022\\
+\textbf{Introductory Evolution and Ecology}\hfill Fall 2022\\
+\textbf{Introduction to Organismal Biology}\hfill Fall 2022\\
 \textbf{Cellular Basis of Life}\hfill Spring 2022\\
 \textbf{Introduction to Organismal Biology}\hfill Spring 2022\\
 \textbf{Introduction to Cell and Molecular Biology}\hfill Winter 2022\\
@@ -311,13 +351,54 @@ Awarded for excellence in teaching in Evolution.
 }
 \end{tabular}
 
-\vspace{4mm}
+\vspace{2mm}
 
-\section{\fontsize{16}{48}\selectfont Conference Presentations and Seminars}
+
+
+\section{\fontsize{16}{48}\selectfont Funding}
+
+\textbf{2023-2025}. \$499,946.41. Co-PI with N. Holt and K. Samuk, \textit{Using a Cluster Hire of Diversity‐Invested Faculty to Integrate Biology and Social Justice Teaching.} UCOP Advancing Faculty Diversity.\\
+
+
+
+
+\vspace{2mm}
+
+\section{\fontsize{16}{48}\selectfont Publications}
+
+\vspace{-9mm}
+\subsection{\fontsize{12}{36}\selectfont \textit{Peer-reviewed articles}}
+
+\begin{cslreferences}
+\textbf{Delaney, Lucy E} \& Igić, B. (2022). The phylogenetic distribution and frequency of self-incompatibility in Fabaceae. \textit{International Journal of Plant Sciences, 183}(1), 30--42. \href{https://www.journals.uchicago.edu/doi/pdf/10.1086/717329?casa_token=nXESdJ1VGSkAAAAA:xxRT50jLex1HtV9HKSP6BNIVGT-4SdWF9yKf2Hx9miom0y_V2TzKWT81ev6hSp1Jgv1mjI_IAhw}{\faFile}
+
+\end{cslreferences}
+
+
 \vspace{-5mm}
+\subsection{\fontsize{12}{36}\selectfont \textit{Other works}}
 
-\subsection{\fontsize{12}{36}\selectfont \textit{Evolution Education Research}}
+\vspace{-2mm}
 
+\begin{cslreferences}
+\tightlist
+\textbf{Delaney, Lucy E}. (2022). \emph{Biology 002: The Cellular Basis of Life Course Textbook}. \href{https://ledelaney.org/teaching/2022/spring/biol002/_main.pdf}{\faFile}\\
+\vspace{-4mm}
+
+\textbf{Delaney, Lucy E}. (2021). \emph{How do we understand natural selection?} $[$PhD thesis$]$. University of Illinois at Chicago. \href{https://ledelaney.org/static/docs/Delaney_Lucy_E_Thesis.pdf}{\faFile}\\
+\vspace{-4mm}
+
+\textbf{Delaney, Lucy E}. (2012). Nietzsche, nerve stimulation-image connection, and ontology. \emph{John Jay's Finest}, \emph{27}, 99--103. \href{https://ledelaney.org/static/docs/Delaney-JJAYFinest.pdf}{\faFile}
+\end{cslreferences}
+
+
+\vspace{8mm}
+
+\section{\fontsize{16}{48}\selectfont Presentations and Seminars}
+
+
+\textbf{December 2023} at RIDLE 4X Showcase Event $\vert$ Talk \hspace{0.3mm} \href{https://ledelaney.org/talks/2023ridle/}{\faImages}\\
+\textbf{July 2022} at Howard Hughes Medical Institute $\vert$ Poster Presentation \hspace{0.3mm} \href{https://ledelaney.org/talks/2022dtr/}{\faImages}\\
 \textbf{October 2021} at University of Illinois at Chicago $\vert$ Virtual Seminar \hspace{0.3mm} \href{https://ledelaney.org/talks/2021defense}{\faImages} \href{https://github.com/ledelaney/10-21-Defense}{\faGithub}\\
 \textbf{August 2021} at University of California, Riverside $\vert$ Virtual Seminar \hspace{0.3mm} \href{https://ledelaney.org/talks/2021ucr}{\faImages} \href{https://github.com/ledelaney/08-21-UCR}{\faGithub}\\
 \textbf{July 2021} at Society for the Advancement of Biology Education Research $\vert$ Virtual Talk \hspace{0.3mm} \href{https://uofi.box.com/v/2021saber-talk}{\faVideo} \href{https://ledelaney.org/talks/2021saber}{\faImages} \href{https://github.com/ledelaney/07-21-SABER}{\faGithub}\\
@@ -325,7 +406,7 @@ Awarded for excellence in teaching in Evolution.
 \textbf{March 2021} at Midwest Ecology and Evolution Conference\ $\vert$ \faAward\ Best Graduate Talk\ \hspace{0.1mm} \href{https://uofi.box.com/v/2021meec-talk}{\faVideo} \href{https://ledelaney.org/talks/2021meec/}{\faImages} \href{https://github.com/ledelaney/03-21-MEEC}{\faGithub}\\
 \textbf{January 2021} at SABER West\ $\vert$ Virtual Roundtable \hspace{0.4mm} \href{https://ledelaney.org/talks/2021saberw/}{\faImages} \href{https://github.com/ledelaney/01-21-SABERwest}{\faGithub}
 
-\vspace{-5mm}
+\vspace{-7mm}
 
 \subsection{\fontsize{12}{36}\selectfont \textit{Flowering Plant Breeding Systems}}
 
@@ -335,66 +416,27 @@ Awarded for excellence in teaching in Evolution.
 
 \vspace{4mm}
 
-\section{\fontsize{16}{48}\selectfont Publications}
-
-\begin{cslreferences}
-
-\textbf{Delaney, Lucy E} \& Igić, B. (2022). The phylogenetic distribution and frequency of self-incompatibility in Fabaceae. \textit{International Journal of Plant Sciences, 183}(1), 30--42. \href{https://www.journals.uchicago.edu/doi/pdf/10.1086/717329?casa_token=nXESdJ1VGSkAAAAA:xxRT50jLex1HtV9HKSP6BNIVGT-4SdWF9yKf2Hx9miom0y_V2TzKWT81ev6hSp1Jgv1mjI_IAhw}{\faFile}\\
-
-\textbf{Delaney, Lucy E}. (2021). \emph{How do we understand natural selection?} $[$PhD thesis$]$. University of Illinois at Chicago. \href{https://ledelaney.org/static/docs/Delaney_Lucy_E_Thesis.pdf}{\faFile}\\
-
-\textbf{Delaney, Lucy E}. (2012). Nietzsche, nerve stimulation-image connection, and ontology. \emph{John Jay's Finest}, \emph{27}, 99--103. \href{https://ledelaney.org/static/docs/Delaney-JJAYFinest.pdf}{\faFile}
-\end{cslreferences}
-
-\vspace{-4mm}
-\subsection{\fontsize{12}{36}\selectfont \textit{In preparation}}
-\vspace{-2mm}
-\begin{cslreferences}
-
-\textbf{Delaney, Lucy E}. The orchids and their breeding systems. \textit{Prepared for Orchids magazine}.\\
-
-\textbf{Delaney, Lucy E} \& Brown, J. S. University students' descriptions and explanations of adaptation. I. A framework for systematic analysis.\\
-
-\textbf{Delaney, Lucy E} \& Brown, J. S. University students' descriptions and explanations of adaptation. II. A framework for pedagogical explanation.
-\end{cslreferences}
-\vspace{8mm}
-\newpage
 
 
-\section{\fontsize{16}{48}\selectfont Professional Activities}
-
-\vspace{-7mm}
-
-\subsection{\fontsize{12}{36}\selectfont \textit{Service}}
+\section{\fontsize{16}{48}\selectfont Teaching Service Activities}
 
 \begin{itemize}[label=$\mathwitch*$]
+
+\item{\textbf{2024} Invited participant for the \textit{Ask a CNAS Professor} video series}
+\item{\textbf{2024} Invited speaker for CNAS First-Year Scholars Faculty Mixer}
+\item{\textbf{2023-2024} Invited speaker for EEOB graduate student lunch bunch (2x)}
+\item{\textbf{2023} Invited speaker for EEOB 400 graduate seminar (2x)}
+\item{\textbf{2023} Faculty panel speaker for CNAS new student orientation day}
+\item{\textbf{2023} Faculty ``Brown Bag'' presenter for RISE program}
+\item{\textbf{2023-present} Biology curriculum committee member}
+\item{\textbf{2022-2023} Faculty mentor for CNAS Graduate Student Mentorship Program}
+\item{\textbf{2022} Journal club facilitator for GradEdge/JumpStart program for new graduate students}
 \item{\textbf{2021} Participant in the Undergraduate Mentoring Program at the Annual Evolution Conference}
 \item{\textbf{2021} Invited member of UIC student advisory group concerning graduate student teaching support}
 \item{\textbf{2020} Participant in the 2020 Chicago \faRProject\ Collaborative Conference \href{https://chircollab.github.io/}{\faLink}}
-\item{\textbf{2018} Reviewer for International Journal of Plant Sciences (1x), Oxford Bibliographies (1x)}
-\item{\textbf{2016} General horticulture volunteer at Garfield Park Conservatory \href{https://garfieldconservatory.org/}{\faLink}}
 \end{itemize}
 
-\vspace{-7mm}
 
-\subsection{\fontsize{12}{36}\selectfont \textit{Memberships}}
-
-\begin{itemize}[label=$\mathwitch*$]
-\item{Society for the Study of Evolution}
-\item{Botanical Society of America}
-\item{Field Museum Women in Science}
-\item{Society for the Advancement of Biology Education Research (SABER)}
-\end{itemize}
-\vspace{2mm}
-
-\section{\fontsize{16}{48}\selectfont Other Awards}
-
-\begin{itemize}[label=$\mathwitch*$]
-\item{\textbf{2018} Recipient of the Biological Sciences Department Travel Award}
-\item{\textbf{2017} Accepted to NSF-funded workshop on Bayesian Analysis of Macroevolutionary Mixtures \href{http://bamm-project.org/index.html}{\faLink}}
-\item{\textbf{2017} Recipient of the Biological Sciences Department Travel Award}
-\item{\textbf{2017} Accepted to microMORPH Plant Anatomy Summer Course at Harvard University \href{https://web.archive.org/web/20170922060558/http://arboretum.harvard.edu/tracing-evolution-form-function/}{\faLink}}
-\end{itemize}
 \vspace{2mm}
 
 \section{\fontsize{16}{48}\selectfont Selected Professional Experience}
