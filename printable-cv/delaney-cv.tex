@@ -21,10 +21,8 @@ BoldItalicFont  = MinionPro-BoldIt.otf]
 \usepackage{fontawesome5}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
-\usepackage{amssymb}
 \usepackage{halloweenmath}
 \usepackage{multicol}
-\usepackage{ragged2e}
 
 \usepackage{xcolor}
 \definecolor{light-gray}{gray}{0.35}
@@ -32,20 +30,20 @@ BoldItalicFont  = MinionPro-BoldIt.otf]
 \definecolor{beige}{HTML}{CFA37B}
 \definecolor{darkorange}{HTML}{D35023}
 \definecolor{yellow}{HTML}{c72927}
-
+% \definecolor{tvstatic}{HTML}{8B4C9E}
+\definecolor{tvstatic}{HTML}{B02194}
 
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=yellow,
+    linkcolor=tvstatic,
     filecolor=black,      
-    urlcolor=yellow,
+    urlcolor=tvstatic,
     citecolor = black
 }
 
 \usepackage{enumitem}
 \setitemize{itemsep=0pt, itemindent=15pt}
-
 
 % Reference formatting
 \newlength{\cslhangindent}
@@ -58,8 +56,6 @@ BoldItalicFont  = MinionPro-BoldIt.otf]
 %title formatting
 \usepackage{titlesec}
 \titleformat{\section}[block]{\bfseries}{}{5em}{}
-%\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
-%\titleformat{\subsection}[hang]{\bfseries}{}{1em}{}
 \setcounter{secnumdepth}{0}
 
 \titlespacing*{\section}
@@ -75,10 +71,6 @@ BoldItalicFont  = MinionPro-BoldIt.otf]
 \setlength\parindent{0pt}
 \setlength{\parskip}{0pt}
 
-% Widow and orphan prevention
-\widowpenalty10000
-\clubpenalty10000
-
 %Need all these for graphics and tables
 \usepackage{subfig}
 \usepackage{graphicx}
@@ -92,17 +84,15 @@ BoldItalicFont  = MinionPro-BoldIt.otf]
 \backgroundsetup{
 scale=1,
 color=black,
-opacity=0.95,
+opacity=36,
 placement=top,
-hshift=90,
-vshift=-55,
-%position={5cm,7cm},
-angle=-10,
+hshift=60,
+vshift=17,
+angle=0,
 contents={%
-  \includegraphics[width=0.22\textwidth]{images/2-citrus.png}
+  \includegraphics[width=0.38\textwidth]{images/tv.png}
   }%
 }
-
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -119,6 +109,7 @@ contents={%
 \fancyfoot[R]{\footnotesize{\today\ $\vert$ Lucy E Delaney \href{https://github.com/ledelaney/led-cv}{\faGithub}}}}
 
 
+
 \begin{document}
 \BgThispage
 \pagestyle{alldocument}
@@ -130,14 +121,13 @@ contents={%
 \textit{Junior Faculty Distinguished Teaching Professor}\\
 \textit{College of Natural and Agricultural Sciences}\\
 \textit{University of California, Riverside}
-%{\small2372 Spieth Hall}
 
 \columnbreak
 
 \begin{flushright}
 \rightskip 2em
-\href{mailto:lucyd@ucr.edu}{\textbf{lucyd@ucr.edu}} \faPaperPlane\\
-\href{https://ledelaney.org}{\textbf{ledelaney.org}} \faDesktop \\
+\href{mailto:lucyd@ucr.edu}{\textbf{lucyd@ucr.edu}} \faEnvelopeOpen\\
+\href{https://ledelaney.org}{\textbf{ledelaney.org}} \faMousePointer \\
 \href{https://github.com/ledelaney}{\textbf{@ledelaney}} \faGithub\\
 \href{https://www.youtube.com/@thatslifeonTV}{\textbf{@thatslifeonTV}} \faYoutube
 \end{flushright}
@@ -287,20 +277,18 @@ Recognition for excellence in teaching and mentoring at the campus (1) and depar
 % \vspace{4mm}
 
 \section{\fontsize{16}{48}\selectfont University Teaching}
-\vspace{1mm}
 
-\hfill\textit{Find a repository of syllabi for all past and present UCR courses \href{https://ledelaney.org/teaching/syllabi/}{\textbf{here}}.}
 
-\vspace{3mm}
+% \vspace{3mm}
 
 \begin{tabular}{l | l}
-\parbox{0.30\textwidth}{
+\parbox{0.28\textwidth}{
 \begin{center}
 \textsc{Mentorship}
 \end{center}
 }
 &
-\parbox{0.60\textwidth}{
+\parbox{0.62\textwidth}{
 
 Brittney Nguyen, PhD Candidate\hfill Fall 2023--present\\
 Theo Tran, Honors Capstone student\hfill Spring 2025--Spring 2026\\
@@ -308,36 +296,41 @@ Arnav Kacker, undergraduate student\hfill Fall 2023--Spring 2025}
 
 \end{tabular} 
 
-\vspace{4mm}
+\vspace{6mm}
+
+\hfill\textit{Find a repository of syllabi for all past and present UCR courses \href{https://ledelaney.org/teaching/syllabi/}{\textbf{here}}.}
+
+\vspace{2mm}
 
 \begin{tabular}{l | l}
-\parbox{0.30\textwidth}{
+\parbox{0.28\textwidth}{
 \begin{center}
-\textsc{Course Redesign and Development}
+\textsc{Course Redesign\textsuperscript{1} and Development\textsuperscript{2}}
 \end{center}
 }
 &
-\parbox{0.60\textwidth}{
+\parbox{0.62\textwidth}{
 
-\textbf{Online modality redevelopment}\hfill Fall 2025--Present\\
-\textbf{Computer Skills for the Everyday Biologist}\hfill Winter 2026\\
-\textbf{Introductory Evolution and Ecology}\hfill Spring 2023--Present\\
-\textbf{Introduction to Organismal Biology}\hfill Fall 2022--Present\\
-\textbf{Cellular Basis of Life} \href{https://ledelaney.org/teaching/2022/spring/biol002/}{\faLink} \href{https://github.com/ledelaney/biol002}{\faGithub} \hfill Spring 2022--Present\\
-\textbf{Foundations for the Future} \href{https://ledelaney.org/teaching/2021/future-foundations/}{\faLink} \href{https://github.com/ledelaney/future-foundations}{\faGithub} \hfill Fall 2021}
+\textbf{Computer Skills for the Everyday Biologist}\textsuperscript{2}\hfill Winter 2026\\
+\textbf{Online modality redevelopment}\textsuperscript{1,2} (\textit{3 courses})\hfill Fall 2025--Present\\
+\textbf{Introductory Evolution and Ecology}\textsuperscript{1}\hfill Spring 2023--Present\\
+\textbf{Introduction to Organismal Biology}\textsuperscript{1}\hfill Fall 2022--Present\\
+\textbf{Cellular Basis of Life}\textsuperscript{1,2} \href{https://ledelaney.org/teaching/2022/spring/biol002/}{\faLink} \href{https://github.com/ledelaney/biol002}{\faGithub} \hfill Spring 2022--Present\\
+\textbf{Foundations for the Future}\textsuperscript{2} \href{https://ledelaney.org/teaching/2021/future-foundations/}{\faLink} \href{https://github.com/ledelaney/future-foundations}{\faGithub} \hfill Fall 2021}
 
 \end{tabular} 
+
 
 \vspace{4mm}
 
 \begin{tabular}{l | l}
-\parbox{0.30\textwidth}{
+\parbox{0.28\textwidth}{
 \begin{center}
 \textsc{Instructor of Record}
 \end{center}
 }
 &
-\parbox{0.60\textwidth}{
+\parbox{0.62\textwidth}{
 
 \textbf{Introduction to Organismal Biology} (n=285)\hfill Spring 2026\\
 \textbf{Cellular Basis of Life} (n=280)\hfill Spring 2026\\
@@ -370,13 +363,13 @@ Arnav Kacker, undergraduate student\hfill Fall 2023--Spring 2025}
 \vspace{4mm}
 
 \begin{tabular}{l | l}
-\parbox{0.30\textwidth}{
+\parbox{0.28\textwidth}{
 \begin{center}
 \textsc{Graduate Student Positions}
 \end{center}
 }
 &
-\parbox{0.6\textwidth}{
+\parbox{0.62\textwidth}{
 \textbf{Course Coordinator} \href{https://ledelaney.org/teaching/2021/bcq/}{\faLink} \href{https://github.com/ledelaney/bcq}{\faGithub}\hfill Fall 2021\\ 
 \textbf{Departmental Course Builder} \href{https://www.ledelaney.org/cb-materials}{\faLink} \href{https://github.com/ledelaney/cb-materials}{\faGithub}\hfill 2020-2021\\
 \textbf{Graduate Teaching Assistant}\hfill 2016-2020\\
@@ -394,7 +387,7 @@ Arnav Kacker, undergraduate student\hfill Fall 2023--Spring 2025}
 \vspace{-2mm}
 
 \begin{cslreferences}
-\textbf{Delaney, Lucy E} \& Igić, B. (2022). The phylogenetic distribution and frequency of self-incompatibility in Fabaceae. \textit{International Journal of Plant Sciences, 183}(1), 30--42. \href{https://www.journals.uchicago.edu/doi/pdf/10.1086/717329?casa_token=nXESdJ1VGSkAAAAA:xxRT50jLex1HtV9HKSP6BNIVGT-4SdWF9yKf2Hx9miom0y_V2TzKWT81ev6hSp1Jgv1mjI_IAhw}{\faFile}
+\textbf{Delaney, Lucy E} \& Igić, B. (2022). The phylogenetic distribution and frequency of self-incompatibility in Fabaceae. \textit{International Journal of Plant Sciences, 183}(1), 30--42. \href{https://www.journals.uchicago.edu/doi/pdf/10.1086/717329?casa_token=nXESdJ1VGSkAAAAA:xxRT50jLex1HtV9HKSP6BNIVGT-4SdWF9yKf2Hx9miom0y_V2TzKWT81ev6hSp1Jgv1mjI_IAhw}{\faFileDownload}
 
 \end{cslreferences}
 
@@ -403,7 +396,7 @@ Arnav Kacker, undergraduate student\hfill Fall 2023--Spring 2025}
 \vspace{-2mm}
 
 \begin{cslreferences}
-\textbf{Delaney, Lucy E} (2026.) Public Access Pedagogy: Storytelling as an act of sensemaking in Introductory Biology. In Richard Edwards, Connie Nugent, \& Lash Vance (Eds), \textit{Multipedagogies: Lessons from an Innovative Faculty Learning Community at the Intersection of Teaching, Learning and Technology.} Routledge. \href{https://ledelaney.org/static/docs/Delaney-PublicAccessPedagogy.pdf}{\faFile}
+\textbf{Delaney, Lucy E} (2026.) Public Access Pedagogy: Storytelling as an act of sensemaking in Introductory Biology. In Richard Edwards, Connie Nugent, \& Lash Vance (Eds), \textit{Multipedagogies: Lessons from an Innovative Faculty Learning Community at the Intersection of Teaching, Learning and Technology.} Routledge. \href{https://ledelaney.org/static/docs/Delaney-PublicAccessPedagogy.pdf}{\faFileDownload}
 
 \end{cslreferences}
 
@@ -415,13 +408,13 @@ Arnav Kacker, undergraduate student\hfill Fall 2023--Spring 2025}
 
 \begin{cslreferences}
 \tightlist
-\textbf{Delaney, Lucy E}. (2022). \emph{Biology 002: The Cellular Basis of Life Course Textbook}. \href{https://ledelaney.org/teaching/2022/spring/biol002/_main.pdf}{\faFile}\\
+\textbf{Delaney, Lucy E}. (2022). \emph{Biology 002: The Cellular Basis of Life Course Textbook}. \href{https://ledelaney.org/teaching/2022/spring/biol002/_main.pdf}{\faFileDownload}\\
 \vspace{-4mm}
 
-\textbf{Delaney, Lucy E}. (2021). \emph{How do we understand natural selection?} $[$PhD thesis$]$. University of Illinois at Chicago. \href{https://ledelaney.org/static/docs/Delaney_Lucy_E_Thesis.pdf}{\faFile}\\
+\textbf{Delaney, Lucy E}. (2021). \emph{How do we understand natural selection?} $[$PhD thesis$]$. University of Illinois at Chicago. \href{https://ledelaney.org/static/docs/Delaney_Lucy_E_Thesis.pdf}{\faFileDownload}\\
 \vspace{-4mm}
 
-\textbf{Delaney, Lucy E}. (2012). Nietzsche, nerve stimulation-image connection, and ontology. \emph{John Jay's Finest}, \emph{27}, 99--103. \href{https://ledelaney.org/static/docs/Delaney-JJAYFinest.pdf}{\faFile}
+\textbf{Delaney, Lucy E}. (2012). Nietzsche, nerve stimulation-image connection, and ontology. \emph{John Jay's Finest}, \emph{27}, 99--103. \href{https://ledelaney.org/static/docs/Delaney-JJAYFinest.pdf}{\faFileDownload}
 \end{cslreferences}
 
 
@@ -463,13 +456,16 @@ Arnav Kacker, undergraduate student\hfill Fall 2023--Spring 2025}
 
 \begin{itemize}[label=$\mathwitch*$]
 
-\item{\textbf{A digital community approach to large-enrollment biology lecture} $\vert$ Outlining the use of a ``livestream model'' that leverages popular social media apps like YouTube and Discord to produce high-quality online education and community building at scale.}
+\item{\textbf{A digital community approach to large-enrollment biology lecture} $\vert$ Outlines the development and use of an instructional ``livestream model'' that leverages popular social media apps like YouTube and Discord to faciliate high-quality online education and community building at scale.}
 
-\item{\textbf{Examining the efficacy of two-stage exam models} $\vert$ Studies the effect of two-stage exams on longer-term content retention, with an emphasis on variations in group composition. (\textit{With graduate student.})}
+\item{\textbf{Examining the efficacy of two-stage exam models} $\vert$ Studies the effect of two-stage exams on longer-term content retention, with an emphasis on variations in group composition.\textsuperscript{1}}
 
-\item{\textbf{Effect of course design and structure on student sense of belonging} $\vert$ Uses pre-post surveys over multiple quarters to assess various affective metrics with an emphasis on student sense of belonging. (\textit{With graduate student.})}
+\item{\textbf{Effect of course design and structure on student sense of belonging} $\vert$ Uses pre-post surveys over multiple quarters to assess various affective metrics with an emphasis on student sense of belonging.\textsuperscript{1}}
 
-\item{\textbf{Accessibility and inclusion in the digital classroom} $\vert$ A specific focus on the effects of digital instruction on students with disability accommodations. (\textit{With graduate and undergraduate student.})}
+\item{\textbf{Accessibility and inclusion in the digital classroom} $\vert$ Focuses on the effects of digital instruction on students with disability accommodations.\textsuperscript{1,2}}
+
+\vspace{-0.6mm}
+\hfill{\footnotesize (with graduate\textsuperscript{1} or undergraduate\textsuperscript{2} student)}
 
 \end{itemize}
 
